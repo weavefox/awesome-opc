@@ -61,19 +61,28 @@ This project curates everything a solo founder needs — from understanding poli
 
 ### China
 
-<!-- Add items here -->
+- [《中华人民共和国公司法》](https://guangdong.chinatax.gov.cn/gdsw/zjfg/2025-12/31/content_1203d9ef77944845aeca8ce79160292d.shtml) — 2023 年修订版公司法，取消一人有限公司数量限制，允许自然人设立多家一人公司。
+- [新《公司法》解读 — 上海市人民政府](https://www.shanghai.gov.cn/xbhygq/20240702/fc72a6538b8642e5b2e204ccd291f8ed.html) — 上海市政府对新《公司法》关于一人有限公司等条款的权威解读。
+- [杭州市加大个体工商户培育帮扶力度支持转型升级实施意见 — 杭州市人民政府](https://zfgb.hangzhou.gov.cn/15/101220263/t106220263014/530157.shtml) — 杭州市关于个体工商户培育帮扶及支持"个转企"的政策措施。
+- [深圳市扶持个体工商户高质量发展若干措施 — 深圳市市场监督管理局](https://amr.sz.gov.cn/xxgk/qt/ztlm/jyztdjzc/flfgjzcjd/content/post_12616867.html) — 深圳市创业担保贷款、减费让利等扶持个体工商户的系列政策。
+- [安徽省进一步促进个体工商户发展若干措施解读 — 安徽省人民政府](https://www.ah.gov.cn/content/article/564252431) — 安徽省（含合肥）促进个体工商户发展的政策措施及解读。
 
 ### United States
 
-<!-- Add items here -->
+- [Choose a Business Structure — U.S. SBA](https://www.sba.gov/business-guide/launch-your-business/choose-business-structure) — Official guide from the Small Business Administration on sole proprietorship, LLC, and other structures.
+- [Register Your Business — U.S. SBA](https://www.sba.gov/business-guide/launch-your-business/register-your-business) — Step-by-step guide to registering your business with state and local governments.
+- [Starting a Business — IRS](https://www.irs.gov/businesses/small-businesses-self-employed/starting-a-business) — Federal tax information and requirements for starting a sole proprietorship or LLC.
 
 ### Europe
 
-<!-- Add items here -->
+- [Single-Member Private Limited Liability Companies — EUR-Lex](https://eur-lex.europa.eu/EN/legal-content/summary/single-member-private-limited-liability-companies.html) — EU Directive on single-member companies, enabling limitation of liability for individual entrepreneurs.
+- [Company Law and Corporate Governance — European Commission](https://commission.europa.eu/topics/business-and-industry/doing-business-eu/company-law-and-corporate-governance_en) — EU's unified corporate legal framework for doing business across the Single Market.
 
 ### Others
 
-<!-- Add items here -->
+- [Choosing a Business Structure — ACRA Singapore](https://www.acra.gov.sg/register/business/choosing-business-structure/) — Singapore's official guide on sole proprietorship, partnership, and company structures.
+- [Registering a Sole Proprietorship — ACRA Singapore](https://www.acra.gov.sg/register/business/registering-different-business-structures/sole-proprietorship-or-partnership/) — Step-by-step registration guide for solo business owners in Singapore.
+- [一人会社の設立登記 — 法務省](https://www.moj.go.jp/MINJI/minji06_00117.html) — Japan's Ministry of Justice guide on online registration for one-person companies.
 
 ---
 
