@@ -6,7 +6,9 @@
 
 Help solo founders find direction, build faster, and thrive independently.
 
-[Introduction](#introduction) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources) · [OPC Products](#-opc-products)
+<img src="https://mdn.alipayobjects.com/huamei_wspxri/afts/img/A*mMV1S7Bs4IMAAAAAelAAAAgAenh5AQ/original" alt="Awesome OPC" width="600" />
+
+[Introduction](#introduction) · [OPC Starter](#-opc-starter) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources) · [OPC Products](#-opc-products)
 
 </div>
 
@@ -16,6 +18,7 @@ Help solo founders find direction, build faster, and thrive independently.
 
 - [Introduction](#introduction)
 - [What is OPC?](#what-is-opc)
+- [🎯 OPC Starter](#-opc-starter)
 - [🏛 Policies](#-policies)
   - [China](#china)
   - [United States](#united-states)
@@ -38,6 +41,7 @@ Help solo founders find direction, build faster, and thrive independently.
   - [Podcasts](#podcasts)
   - [Communities](#communities)
   - [Courses](#courses)
+  - [Reports](#reports)
 - [🚀 OPC Products](#-opc-products)
 - [Contributing](#contributing)
 - [License](#license)
@@ -53,6 +57,28 @@ This project curates everything a solo founder needs — from understanding poli
 ## What is OPC?
 
 **OPC (One Person Company)** is a business structure where a single individual operates as both the sole shareholder and director. With the rise of AI, no-code tools, and the creator economy, running a profitable company solo has never been more achievable.
+
+---
+
+## 🎯 OPC Starter
+
+*Your quick-start checklist for launching a one-person company.*
+
+1. **Find your niche** — Pick a specific problem, validate demand, confirm willingness to pay.
+2. **Register your business** — Choose a legal structure (LLC, sole prop, etc.), open a business bank account.
+3. **Build your MVP** — Ship the simplest version that delivers value. Use AI tools to move fast.
+4. **Set up payments** — Integrate Stripe, Lemon Squeezy, or similar. Track finances from day one.
+5. **Launch & get users** — Go where your audience is. Build in public. First 10 users > first 10,000.
+6. **Automate & scale solo** — Use AI agents and SaaS to handle support, marketing, ops, and reporting.
+
+⚠️ Key Reminders
+
+- **You are the bottleneck** — Ruthlessly prioritize. Delegate to AI what doesn't need your judgment.
+- **Revenue first** — One paying customer is worth more than a thousand stars on GitHub.
+- **Automate everything repeatable** — If you're doing it twice a week, automate it. Your time is the scarcest resource.
+- **Separate you from the company** — Use limited liability, business bank accounts, and proper contracts from day one.
+- **Ship fast, iterate faster** — Solo means no meetings, no approvals. Use that speed as your competitive advantage.
+- **Build in public, but protect your moat** — Share your journey to attract users, but keep your unfair advantage close.
 
 ---
 
@@ -84,6 +110,9 @@ This project curates everything a solo founder needs — from understanding poli
 - [Choosing a Business Structure — ACRA Singapore](https://www.acra.gov.sg/register/business/choosing-business-structure/) — Singapore's official guide on sole proprietorship, partnership, and company structures.
 - [Registering a Sole Proprietorship — ACRA Singapore](https://www.acra.gov.sg/register/business/registering-different-business-structures/sole-proprietorship-or-partnership/) — Step-by-step registration guide for solo business owners in Singapore.
 - [一人会社の設立登記 — 法務省](https://www.moj.go.jp/MINJI/minji06_00117.html) — Japan's Ministry of Justice guide on online registration for one-person companies.
+- ['One Person Company' under the Companies Act, 2013 — SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3157951) — Legal background for India's OPC form and its move from minimum-two-person to single-member company formation.
+- [One Person Company and Its Role in Promotion of Entrepreneurship in India](https://ijcrt.org/papers/IJCRT22A6066.pdf) — Connects the OPC legal structure to entrepreneurship promotion and limited-liability solo ownership in India.
+- [One-Person LLC: Governance of Indonesian Legal Entities for MSEs](https://ejournal.undip.ac.id/index.php/dlr/article/view/44378/0) — Studies governance issues in one-person limited liability companies for micro and small enterprises in Indonesia.
 
 ---
 
@@ -157,6 +186,9 @@ This project curates everything a solo founder needs — from understanding poli
 - <img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=16" width="16" height="16" /> [Google AI Studio](https://aistudio.google.com/) — Free platform to prototype and build with Gemini models. Ideal for solo devs exploring AI integration.
 - <img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=16" width="16" height="16" /> [DeepSeek](https://www.deepseek.com/) — High-performance open-source AI models with strong reasoning and coding capabilities at low cost.
 - <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=16" width="16" height="16" /> [GPT Image 2](https://openai.com/index/introducing-4o-image-generation/) — OpenAI's latest image generation model with photorealistic quality, perfect for marketing assets and product visuals.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [MetaGPT](https://github.com/FoundationAgents/MetaGPT) — Multi-agent framework that encodes human SOPs into role-based AI collaboration. Build a virtual software company with PM, architect, and engineer agents.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [AutoGen](https://github.com/microsoft/autogen) — Microsoft's framework for building multi-agent workflows with tools, human input, and conversational handoff.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — Open platform for AI software developers as generalist agents. Code, shell, browse, and run evaluations in sandboxed environments.
 
 ---
 
@@ -193,6 +225,15 @@ This project curates everything a solo founder needs — from understanding poli
 - [The Indie Course by Pieter Levels](https://indiecourse.com/) — Learn to build and launch profitable startups solo, from the maker of Nomad List.
 - [30x500 Academy](https://30x500.com/) — Amy Hoy's course on finding customers, understanding their pain, and building products that sell.
 - [Marketing for Developers](https://devmarketing.xyz/) — Justin Jackson's guide for technical founders on finding customers and growing revenue.
+
+### Reports
+
+- [McKinsey: The State of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) — Business-function adoption context for agentic AI and the gap between pilots and scaled workflow impact.
+- [MIT 2025 AI Agent Index](https://aiagentindex.mit.edu/) — Tracks deployed agent products, capabilities, ecosystem shape, and safety features across the industry.
+- [PwC AI Agent Survey 2025](https://www.pwc.ie/reports/ai-agent-survey.html) — Enterprise adoption signal for agent deployments, expected ROI, governance, and implementation barriers.
+- [KPMG Zero-Person Company Experiment](https://kpmg.com/nl/en/about-us/press-and-media/press-releases/2025/11/ai-zero-person-company-experiment.html) — One of the clearest public experiments asking whether AI agents can run company functions with minimal human supervision.
+- [Gusto 2026 New Business Formation Report](https://gusto.com/resources/gusto-insights/new-business-formation-2026) — How AI is changing who starts businesses and how solo founders launch operations.
+- [Stripe Sessions 2026: Indexing the Economy](https://stripe.com/en-cz/sessions/2026/indexing-the-economy) — Industry context for smaller, faster business entities, embedded finance, and nanocorp narratives.
 
 ---
 
