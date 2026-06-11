@@ -141,6 +141,7 @@ This project curates everything a solo founder needs — from understanding poli
 - <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=16" width="16" height="16" /> [Stripe](https://stripe.com/) — Payment infrastructure for the internet. Subscriptions, invoicing, and global payments.
 - <img src="https://www.google.com/s2/favicons?domain=xero.com&sz=16" width="16" height="16" /> [Xero](https://www.xero.com/) — Cloud-based accounting software designed for small businesses and solo operators.
 - <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — All-in-one payments, tax, and subscriptions platform — acts as your merchant of record.
+- <img src="https://www.google.com/s2/favicons?domain=aipay.alipay.com&sz=16" width="16" height="16" /> [Alipay AI Pay](https://aipay.alipay.com/) — AI-native payment solution by Alipay that enables AI agents to handle transactions seamlessly. 100M+ users, ideal for agentic commerce.
 
 ### Productivity & Operations
 
