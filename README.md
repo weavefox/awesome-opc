@@ -92,15 +92,21 @@ This project curates everything a solo founder needs — from understanding poli
 
 ### Success Stories
 
-<!-- Add items here -->
+- [Pieter Levels — $3M/yr as a Solo Founder](https://levels.io/) — Built Nomad List, Remote OK, and PhotoAI entirely solo, generating millions per year with zero employees.
+- [Maor Shlomo — Base44 Sold for $80M](https://medium.com/@ayushojha010/the-next-1-man-million-dollar-startup-why-2025-is-the-year-of-the-solo-founder-d220edd35203) — Solo-built AI startup acquired by Wix for $80M in cash, just six months after launch.
+- [AJ — Carrd](https://carrd.co/) — One person built Carrd into a widely-used landing page builder with millions of users and $1M+ ARR.
 
 ### Notable One-Person Companies
 
-<!-- Add items here -->
+- [Nomad List](https://nomadlist.com/) — The go-to platform for digital nomads to find the best cities to live and work remotely.
+- [PhotoAI](https://photoai.com/) — AI photo generator by Pieter Levels, reaching $100K+/month as a solo product.
+- [Bannerbear](https://www.bannerbear.com/) — Automated image and video generation API, bootstrapped to $600K ARR by solo founder Jon Yongfook.
 
 ### Interviews & Talks
 
-<!-- Add items here -->
+- [Pieter Levels on Lex Fridman Podcast](https://www.youtube.com/watch?v=oFtjKbXKqbg) — Deep dive into programming, viral AI startups, and the digital nomad life of the most famous solo founder.
+- [How to Build a Startup Without Funding — Pieter Levels @ Dojo Bali](https://www.youtube.com/watch?v=6reLWfFNer0) — Practical talk on shipping fast, staying lean, and building profitable products without investors.
+- [The One-Person Startup Era Has Officially Begun](https://www.youtube.com/watch?v=rsSUIvAkjvk) — Sam Altman predicted the first one-person billion-dollar company — and the numbers are backing it up.
 
 ---
 
@@ -155,23 +161,33 @@ This project curates everything a solo founder needs — from understanding poli
 
 ### Books
 
-<!-- Add items here -->
+- [The Lean Startup](https://theleanstartup.com/) — Eric Ries' classic on building businesses through validated learning and rapid iteration.
+- [Company of One](https://www.goodreads.com/book/show/37570605-company-of-one) — Paul Jarvis makes the case for staying small intentionally and building a sustainable solo business.
+- [MAKE: Bootstrapper's Handbook](https://readmake.com/) — Pieter Levels' practical playbook on shipping products, finding customers, and growing as a solo maker.
 
 ### Newsletters
 
-<!-- Add items here -->
+- [Indie Hackers Newsletter](https://www.indiehackers.com/) — Weekly stories, strategies, and revenue numbers from solo founders building profitable businesses.
+- [The Bootstrapped Founder](https://thebootstrappedfounder.com/) — Arvid Kahl's newsletter on building, growing, and selling bootstrapped SaaS companies.
+- [Starter Story](https://www.starterstory.com/) — Case studies and interviews with founders who started successful businesses, many solo.
 
 ### Podcasts
 
-<!-- Add items here -->
+- [Indie Hackers Podcast](https://www.indiehackers.com/podcasts) — Interviews with solo founders sharing how they built profitable online businesses from scratch.
+- [The Bootstrapped Founder Podcast](https://thebootstrappedfounder.com/podcast/) — Arvid Kahl explores the journey of bootstrapped founders, from idea to exit.
+- [My First Million](https://www.mfmpod.com/) — Sam Parr and Shaan Puri brainstorm business ideas and interview successful entrepreneurs.
 
 ### Communities
 
-<!-- Add items here -->
+- [Indie Hackers](https://www.indiehackers.com/) — The largest community for solo founders and indie makers to connect, share, and learn.
+- [r/SideProject](https://www.reddit.com/r/SideProject/) — Reddit community for sharing side projects, getting feedback, and finding collaborators.
+- [MicroConf Connect](https://microconf.com/) — Community and conferences for bootstrapped SaaS founders, with a strong focus on solo and small teams.
 
 ### Courses
 
-<!-- Add items here -->
+- [The Indie Course by Pieter Levels](https://indiecourse.com/) — Learn to build and launch profitable startups solo, from the maker of Nomad List.
+- [30x500 Academy](https://30x500.com/) — Amy Hoy's course on finding customers, understanding their pain, and building products that sell.
+- [Marketing for Developers](https://devmarketing.xyz/) — Justin Jackson's guide for technical founders on finding customers and growing revenue.
 
 ---
 
