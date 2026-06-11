@@ -1,0 +1,9 @@
+{
+  "excludeFiles": [],
+  "rules": {
+    "space-round-alphabet": 1,
+    "space-round-number": 1,
+    "no-empty-code-lang": 1,
+    "no-trailing-punctuation": 1
+  }
+}

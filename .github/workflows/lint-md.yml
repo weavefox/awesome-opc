@@ -1,0 +1,20 @@
+name: Lint Markdown
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Lint Markdown
+        uses: lint-md/github-action@v0.1.1
+        with:
+          files: './'
+          configFile: .lintmdrc
