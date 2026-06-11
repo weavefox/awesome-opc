@@ -6,7 +6,7 @@
 
 Help solo founders find direction, build faster, and thrive independently.
 
-[Introduction](#introduction) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources)
+[Introduction](#introduction) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources) · [OPC Products](#-opc-products)
 
 </div>
 
@@ -38,6 +38,7 @@ Help solo founders find direction, build faster, and thrive independently.
   - [Podcasts](#podcasts)
   - [Communities](#communities)
   - [Courses](#courses)
+- [🚀 OPC Products](#-opc-products)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -152,6 +153,9 @@ This project curates everything a solo founder needs — from understanding poli
 - <img src="https://www.google.com/s2/favicons?domain=cursor.sh&sz=16" width="16" height="16" /> [Cursor](https://cursor.sh/) — AI-first code editor that helps you build software faster with intelligent code generation.
 - <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=16" width="16" height="16" /> [Claude](https://claude.ai/) — AI assistant for writing, analysis, coding, and creative work.
 - <img src="https://www.google.com/s2/favicons?domain=v0.dev&sz=16" width="16" height="16" /> [v0](https://v0.dev/) — AI-powered UI generation by Vercel. Describe your UI and get production-ready React code.
+- <img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=16" width="16" height="16" /> [Google AI Studio](https://aistudio.google.com/) — Free platform to prototype and build with Gemini models. Ideal for solo devs exploring AI integration.
+- <img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=16" width="16" height="16" /> [DeepSeek](https://www.deepseek.com/) — High-performance open-source AI models with strong reasoning and coding capabilities at low cost.
+- <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=16" width="16" height="16" /> [GPT Image 2](https://openai.com/index/introducing-4o-image-generation/) — OpenAI's latest image generation model with photorealistic quality, perfect for marketing assets and product visuals.
 
 ---
 
@@ -188,6 +192,18 @@ This project curates everything a solo founder needs — from understanding poli
 - [The Indie Course by Pieter Levels](https://indiecourse.com/) — Learn to build and launch profitable startups solo, from the maker of Nomad List.
 - [30x500 Academy](https://30x500.com/) — Amy Hoy's course on finding customers, understanding their pain, and building products that sell.
 - [Marketing for Developers](https://devmarketing.xyz/) — Justin Jackson's guide for technical founders on finding customers and growing revenue.
+
+---
+
+## 🚀 OPC Products
+
+*Real products built and run by one person — proof that solo founders can build at scale.*
+
+- <img src="https://www.google.com/s2/favicons?domain=stardewvalley.net&sz=16" width="16" height="16" /> [Stardew Valley](https://www.stardewvalley.net/) — Eric Barone solo-built this farming RPG over 4.5 years. 50M+ copies sold, $500M+ revenue. One of the most successful indie games ever.
+- <img src="https://www.google.com/s2/favicons?domain=photopea.com&sz=16" width="16" height="16" /> [Photopea](https://www.photopea.com/) — A free browser-based Photoshop alternative built and maintained solo by Ivan Kutskir for 11+ years. Millions of daily users.
+- <img src="https://www.google.com/s2/favicons?domain=designjoy.co&sz=16" width="16" height="16" /> [DesignJoy](https://www.designjoy.co/) — Brett Williams turned productized design into a $200K/month one-person agency with a subscription model.
+- <img src="https://www.google.com/s2/favicons?domain=tldrnewsletter.com&sz=16" width="16" height="16" /> [TLDR Newsletter](https://tldr.tech/) — Dan Ni built a daily tech newsletter into a multi-million dollar AI-powered media business, solo.
+- <img src="https://www.google.com/s2/favicons?domain=typingmind.com&sz=16" width="16" height="16" /> [TypingMind](https://www.typingmind.com/) — Tony Dinh's AI chat interface that reached $45K MRR as a solo product, riding the ChatGPT wave.
 
 ---
 
