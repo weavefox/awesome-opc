@@ -167,6 +167,7 @@ This project curates everything a solo founder needs — from understanding poli
 
 ### Finance & Accounting
 
+- <img src="https://www.google.com/s2/favicons?domain=llcclass.com&sz=16" width="16" height="16" /> [LLC Class](https://llcclass.com) — [Wyoming LLC registration](https://llcclass.com/wyoming) for non-US solo founders — includes [registered agent for LLC](https://llcclass.com/what-is-llc-registered-agent), EIN, and Operating Agreement to unlock Stripe and US business banking.
 - <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=16" width="16" height="16" /> [Stripe](https://stripe.com/) — Payment infrastructure for the internet. Subscriptions, invoicing, and global payments.
 - <img src="https://www.google.com/s2/favicons?domain=xero.com&sz=16" width="16" height="16" /> [Xero](https://www.xero.com/) — Cloud-based accounting software designed for small businesses and solo operators.
 - <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — All-in-one payments, tax, and subscriptions platform — acts as your merchant of record.
