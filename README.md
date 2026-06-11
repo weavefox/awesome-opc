@@ -71,7 +71,7 @@ This project curates everything a solo founder needs — from understanding poli
 5. **Launch & get users** — Go where your audience is. Build in public. First 10 users > first 10,000.
 6. **Automate & scale solo** — Use AI agents and SaaS to handle support, marketing, ops, and reporting.
 
-### ⚠️ Key Reminders
+⚠️ Key Reminders
 
 - **You are the bottleneck** — Ruthlessly prioritize. Delegate to AI what doesn't need your judgment.
 - **Revenue first** — One paying customer is worth more than a thousand stars on GitHub.
