@@ -18,6 +18,7 @@ Help solo founders find direction, build faster, and thrive independently.
 
 - [Introduction](#introduction)
 - [What is OPC?](#what-is-opc)
+- [Selection Criteria](#selection-criteria)
 - [🎯 OPC Starter](#-opc-starter)
 - [🏛 Policies](#-policies)
   - [China](#china)
@@ -54,9 +55,21 @@ Help solo founders find direction, build faster, and thrive independently.
 
 This project curates everything a solo founder needs — from understanding policies and regulations, to finding inspiration from those who've walked the path, to discovering the best tools and resources that make running a one-person company not just possible, but powerful.
 
-## What is OPC?
+## What is OPC
 
 **OPC (One Person Company)** is a business structure where a single individual operates as both the sole shareholder and director. With the rise of AI, no-code tools, and the creator economy, running a profitable company solo has never been more achievable.
+
+In this list, OPC is used broadly: it includes formal one-person company structures, solo founder businesses, indie products, and small operations intentionally run by one person.
+
+## Selection Criteria
+
+To keep this list useful and trustworthy:
+
+- Prefer official sources for policies, registration, tax, and legal information.
+- Include tools that are broadly useful to solo operators, not just newly launched or promotional products.
+- Add case studies only when there is a public source for the founder, product, or reported milestone.
+- Mark time-sensitive claims, such as revenue, user count, policy status, or market reports, with a year when possible.
+- Keep descriptions concise, factual, and focused on why the resource helps one-person companies.
 
 ---
 
@@ -252,10 +265,8 @@ This project curates everything a solo founder needs — from understanding poli
 
 ## Contributing
 
-Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first. Feel free to submit a PR or open an issue.
+Contributions are welcome. Please read the [contribution guidelines](CONTRIBUTING.md) before submitting a PR or opening an issue.
 
 ## License
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 This project is licensed under [MIT](LICENSE).
