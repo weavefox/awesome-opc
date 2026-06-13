@@ -6,7 +6,7 @@
 
 Help solo founders find direction, build faster, and thrive independently.
 
-<img src="https://mdn.alipayobjects.com/huamei_wspxri/afts/img/A*mMV1S7Bs4IMAAAAAelAAAAgAenh5AQ/original" alt="Awesome OPC" width="600" />
+<img src="./assets/awesome-opc.png" alt="Awesome OPC" width="600" />
 
 [Introduction](#introduction) · [OPC Starter](#-opc-starter) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources) · [OPC Products](#-opc-products)
 
