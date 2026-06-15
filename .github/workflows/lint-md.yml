@@ -11,10 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Lint Markdown
-        uses: lint-md/github-action@v0.1.2
-        with:
-          files: './'
-          configFile: .lintmdrc
+        run: npx -y @lint-md/cli $(git ls-files '*.md') -c .lintmdrc -s
