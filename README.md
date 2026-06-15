@@ -160,60 +160,60 @@ To keep this list useful and trustworthy:
 
 ## 🛠 Tools
 
-*The essential toolkit for solo founders — build, ship, and grow by yourself.*
+*The essential toolkit for solo founders — build, ship, and grow by yourself.* 
 
 ### Building & Development
 
-- <img src="https://www.google.com/s2/favicons?domain=cursor.sh&sz=16" width="16" height="16" /> [Cursor](https://cursor.sh/) — AI-first code editor with deep codebase understanding. Tab prediction goes beyond autocomplete — predicts next cursor position and code diffs. (Product Hunt Product of the Year 2024)
-- <img src="https://www.google.com/s2/favicons?domain=codeium.com&sz=16" width="16" height="16" /> [Windsurf](https://codeium.com/windsurf) — AI-first IDE with agentic coding flows for complex multi-file edits. Strong alternative to Cursor with competitive free tier.
+- <img src="https://www.google.com/s2/favicons?domain=bolt.new&sz=16" width="16" height="16" /> [Bolt.new](https://bolt.new/) — Full-stack app from a single prompt — frontend, backend, database, and hosting. Free tier includes 1M tokens/month and unlimited databases.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [Claude Code](https://claude.com/claude-code) — Anthropic's terminal agent for complex engineering. Large refactors, architectural decisions, and debugging. The senior engineer in your terminal. (Product Hunt #1 2024)
+- <img src="https://www.google.com/s2/favicons?domain=cursor.sh&sz=16" width="16" height="16" /> [Cursor](https://cursor.sh/) — AI-first code editor with deep codebase understanding. Tab prediction goes beyond autocomplete — predicts next cursor position and code diffs. (Product Hunt Product of the Year 2024)
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [GitHub Copilot](https://github.com/features/copilot) — Inline code completion that integrates with all major editors. The most widely adopted AI coding tool in the world.
 - <img src="https://www.google.com/s2/favicons?domain=lovable.dev&sz=16" width="16" height="16" /> [Lovable](https://lovable.dev/) — Most beginner-friendly full-stack AI app builder. Generates clean React + Supabase apps from natural language prompts.
-- <img src="https://www.google.com/s2/favicons?domain=bolt.new&sz=16" width="16" height="16" /> [Bolt.new](https://bolt.new/) — Full-stack app from a single prompt — frontend, backend, database, and hosting. Free tier includes 1M tokens/month and unlimited databases.
-- <img src="https://www.google.com/s2/favicons?domain=v0.dev&sz=16" width="16" height="16" /> [v0](https://v0.dev/) — AI UI component generator by Vercel. Produces production-quality React/Next.js code with shadcn/ui and Tailwind.
-- <img src="https://www.google.com/s2/favicons?domain=supabase.com&sz=16" width="16" height="16" /> [Supabase](https://supabase.com/) — Open-source Firebase alternative — the default backend for solo SaaS. Postgres, auth, storage, real-time, and edge functions in one. (Product Hunt DEV TOOL WINNER)
-- <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=16" width="16" height="16" /> [Vercel](https://vercel.com/) — Zero-config deployment platform for frontend and full-stack apps. Git push → production.
 - <img src="https://www.google.com/s2/favicons?domain=railway.app&sz=16" width="16" height="16" /> [Railway](https://railway.app/) — Deploy backends, databases, and cron jobs in seconds. Great DX for solo devs.
+- <img src="https://www.google.com/s2/favicons?domain=supabase.com&sz=16" width="16" height="16" /> [Supabase](https://supabase.com/) — Open-source Firebase alternative — the default backend for solo SaaS. Postgres, auth, storage, real-time, and edge functions in one. (Product Hunt DEV TOOL WINNER)
+- <img src="https://www.google.com/s2/favicons?domain=v0.dev&sz=16" width="16" height="16" /> [v0](https://v0.dev/) — AI UI component generator by Vercel. Produces production-quality React/Next.js code with shadcn/ui and Tailwind.
+- <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=16" width="16" height="16" /> [Vercel](https://vercel.com/) — Zero-config deployment platform for frontend and full-stack apps. Git push → production.
 - <img src="https://www.google.com/s2/favicons?domain=weavefox.cn&sz=16" width="16" height="16" /> [WeaveFox](https://www.weavefox.cn/) — Free AIGC platform that turns text prompts into full-stack applications with one-click deployment.
+- <img src="https://www.google.com/s2/favicons?domain=codeium.com&sz=16" width="16" height="16" /> [Windsurf](https://codeium.com/windsurf) — AI-first IDE with agentic coding flows for complex multi-file edits. Strong alternative to Cursor with competitive free tier.
 
 ### Design & UI
 
-- <img src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=16" width="16" height="16" /> [Midjourney](https://www.midjourney.com/) — Industry-leading AI image generation. Unmatched aesthetic quality for product mockups, marketing visuals, illustrations, and brand imagery.
-- <img src="https://www.google.com/s2/favicons?domain=lovart.ai&sz=16" width="16" height="16" /> [Lovart](https://www.lovart.ai/) — World's first AI Design Agent. Collaborative canvas for branding and marketing — upload references, sketch concepts, edit layers.
+- <img src="https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=16" width="16" height="16" /> [Adobe Firefly](https://firefly.adobe.com/) — Professional image editing and generation within Adobe's ecosystem. Commercial-safe AI imagery trained on licensed content.
 - <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=16" width="16" height="16" /> [Canva AI](https://www.canva.com/) — All-in-one design for non-designers. Marketing graphics, social posts, presentations, videos, and documents with AI assistance.
 - <img src="https://www.google.com/s2/favicons?domain=figma.com&sz=16" width="16" height="16" /> [Figma](https://www.figma.com/) — Industry-standard collaborative design tool with powerful AI features. Essential for app interface design and team collaboration.
 - <img src="https://www.google.com/s2/favicons?domain=framer.com&sz=16" width="16" height="16" /> [Framer](https://www.framer.com/) — Build and publish stunning websites visually, no code required.
 - <img src="https://www.google.com/s2/favicons?domain=stitch.withgoogle.com&sz=16" width="16" height="16" /> [Google Stitch](https://stitch.withgoogle.com/) — AI-powered UI design tool by Google that generates mobile and web UIs from text or image prompts.
+- <img src="https://www.google.com/s2/favicons?domain=lovart.ai&sz=16" width="16" height="16" /> [Lovart](https://www.lovart.ai/) — World's first AI Design Agent. Collaborative canvas for branding and marketing — upload references, sketch concepts, edit layers.
+- <img src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=16" width="16" height="16" /> [Midjourney](https://www.midjourney.com/) — Industry-leading AI image generation. Unmatched aesthetic quality for product mockups, marketing visuals, illustrations, and brand imagery.
 - <img src="https://www.google.com/s2/favicons?domain=ui.shadcn.com&sz=16" width="16" height="16" /> [Shadcn/ui](https://ui.shadcn.com/) — Beautiful, copy-paste React components built on Radix UI and Tailwind CSS.
-- <img src="https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=16" width="16" height="16" /> [Adobe Firefly](https://firefly.adobe.com/) — Professional image editing and generation within Adobe's ecosystem. Commercial-safe AI imagery trained on licensed content.
 
 ### Marketing & Growth
 
 - <img src="https://www.google.com/s2/favicons?domain=beehiiv.com&sz=16" width="16" height="16" /> [Beehiiv](https://www.beehiiv.com/) — Newsletter platform built for growth. 0% revenue share, built-in referral system, ad network, and AI website builder. Native MCP integration for Claude.
 - <img src="https://www.google.com/s2/favicons?domain=buffer.com&sz=16" width="16" height="16" /> [Buffer](https://buffer.com/) — Social media scheduling and analytics with AI caption suggestions. Manage all platforms from one dashboard.
 - <img src="https://www.google.com/s2/favicons?domain=plausible.io&sz=16" width="16" height="16" /> [Plausible](https://plausible.io/) — Privacy-friendly, lightweight web analytics. No cookie banners needed.
-- <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [Twitter / X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
+- <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
 
 ### Finance & Accounting
 
 - <img src="https://www.google.com/s2/favicons?domain=aipay.alipay.com&sz=16" width="16" height="16" /> [Alipay AI Pay](https://aipay.alipay.com/) — AI-native payment solution by Alipay that enables AI agents to handle transactions seamlessly. 100M+ users, ideal for agentic commerce.
-- <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=16" width="16" height="16" /> [Stripe](https://stripe.com/) — The default payment infrastructure for SaaS. Checkout, subscriptions, invoicing, and customer portal. Powers millions of one-person companies.
-- <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — Merchant of record for digital products. Handles global tax, billing, VAT, and compliance — so you don't have to.
-- <img src="https://www.google.com/s2/favicons?domain=mercury.com&sz=16" width="16" height="16" /> [Mercury](https://mercury.com/) — Banking built for startups. Treasury, corporate cards, and financial workflows designed for one-person companies. No fees.
 - <img src="https://www.google.com/s2/favicons?domain=fondo.com&sz=16" width="16" height="16" /> [Fondo](https://www.fondo.com/) — AI-powered bookkeeping for startups. Automated categorization, monthly closes, tax preparation, and R&D tax credits.
-- <img src="https://www.google.com/s2/favicons?domain=quickbooks.intuit.com&sz=16" width="16" height="16" /> [QuickBooks Solopreneur](https://quickbooks.intuit.com/solopreneur/) — Auto-categorizes expenses, tracks mileage, captures receipts, and estimates quarterly taxes.
-- <img src="https://www.google.com/s2/favicons?domain=xero.com&sz=16" width="16" height="16" /> [Xero](https://www.xero.com/) — Cloud-based accounting software designed for small businesses and solo operators.
+- <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — Merchant of record for digital products. Handles global tax, billing, VAT, and compliance — so you don't have to.
 - <img src="https://www.google.com/s2/favicons?domain=llcclass.com&sz=16" width="16" height="16" /> [LLC Class](https://llcclass.com) — [Wyoming LLC registration](https://llcclass.com/wyoming) for non-US solo founders — includes [registered agent for LLC](https://llcclass.com/what-is-llc-registered-agent), EIN, and Operating Agreement to unlock Stripe and US business banking.
+- <img src="https://www.google.com/s2/favicons?domain=mercury.com&sz=16" width="16" height="16" /> [Mercury](https://mercury.com/) — Banking built for startups. Treasury, corporate cards, and financial workflows designed for one-person companies. No fees.
+- <img src="https://www.google.com/s2/favicons?domain=quickbooks.intuit.com&sz=16" width="16" height="16" /> [QuickBooks Solopreneur](https://quickbooks.intuit.com/solopreneur/) — Auto-categorizes expenses, tracks mileage, captures receipts, and estimates quarterly taxes.
+- <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=16" width="16" height="16" /> [Stripe](https://stripe.com/) — The default payment infrastructure for SaaS. Checkout, subscriptions, invoicing, and customer portal. Powers millions of one-person companies.
+- <img src="https://www.google.com/s2/favicons?domain=xero.com&sz=16" width="16" height="16" /> [Xero](https://www.xero.com/) — Cloud-based accounting software designed for small businesses and solo operators.
 
 ### Productivity & Operations
 
-- <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=16" width="16" height="16" /> [Zapier](https://zapier.com/) — Connect 7,000+ apps with AI decision steps. The easiest automation for non-technical founders.
-- <img src="https://www.google.com/s2/favicons?domain=n8n.io&sz=16" width="16" height="16" /> [n8n](https://n8n.io/) — Open-source workflow automation with unlimited workflows and zero usage fees. Full code access when needed.
-- <img src="https://www.google.com/s2/favicons?domain=make.com&sz=16" width="16" height="16" /> [Make](https://www.make.com/) — Visual workflow automation — the sweet spot between Zapier's ease and n8n's power. See the actual logic, add JS when needed.
-- <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=16" width="16" height="16" /> [Notion AI](https://www.notion.so/product/ai) — All-in-one workspace with AI. Docs, databases, projects, meeting summaries, and knowledge base. The operating system for one-person companies.
 - <img src="https://www.google.com/s2/favicons?domain=cal.com&sz=16" width="16" height="16" /> [Cal.com](https://cal.com/) — Open-source scheduling with booking pages, round-robin, and workflow automation. The Calendly alternative that respects your data.
-- <img src="https://www.google.com/s2/favicons?domain=reclaim.ai&sz=16" width="16" height="16" /> [Reclaim.ai](https://reclaim.ai/) — AI calendar that defends focus blocks, schedules habits, and finds optimal meeting slots based on your energy patterns.
 - <img src="https://www.google.com/s2/favicons?domain=linear.app&sz=16" width="16" height="16" /> [Linear](https://linear.app/) — Fast, streamlined issue tracking and project management for builders who ship.
+- <img src="https://www.google.com/s2/favicons?domain=make.com&sz=16" width="16" height="16" /> [Make](https://www.make.com/) — Visual workflow automation — the sweet spot between Zapier's ease and n8n's power. See the actual logic, add JS when needed.
+- <img src="https://www.google.com/s2/favicons?domain=n8n.io&sz=16" width="16" height="16" /> [n8n](https://n8n.io/) — Open-source workflow automation with unlimited workflows and zero usage fees. Full code access when needed.
+- <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=16" width="16" height="16" /> [Notion AI](https://www.notion.so/product/ai) — All-in-one workspace with AI. Docs, databases, projects, meeting summaries, and knowledge base. The operating system for one-person companies.
+- <img src="https://www.google.com/s2/favicons?domain=reclaim.ai&sz=16" width="16" height="16" /> [Reclaim.ai](https://reclaim.ai/) — AI calendar that defends focus blocks, schedules habits, and finds optimal meeting slots based on your energy patterns.
+- <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=16" width="16" height="16" /> [Zapier](https://zapier.com/) — Connect 7,000+ apps with AI decision steps. The easiest automation for non-technical founders.
 
 ### AI-Powered
 
@@ -222,12 +222,12 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=16" width="16" height="16" /> [ChatGPT](https://chatgpt.com/) — The most widely-used AI assistant with 800M+ weekly users. Strong at general tasks, browsing, DALL-E image generation, and plugins.
 - <img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=16" width="16" height="16" /> [DeepSeek](https://www.deepseek.com/) — Open-source Chinese AI model with frontier-level reasoning. Extremely cost-effective API — often 10–50× cheaper than GPT-4. Strong at code and math.
 - <img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=16" width="16" height="16" /> [Gemini](https://gemini.google.com/) — Google's multimodal AI with deep Workspace integration. 750M+ monthly users. Strong at search, analysis, and multimodal tasks.
-- <img src="https://www.google.com/s2/favicons?domain=kimi.moonshot.cn&sz=16" width="16" height="16" /> [Kimi](https://kimi.moonshot.cn/) — Chinese AI with industry-leading long context window. Excellent for reading and analyzing long documents in Chinese and English.
-- <img src="https://www.google.com/s2/favicons?domain=perplexity.ai&sz=16" width="16" height="16" /> [Perplexity](https://www.perplexity.ai/) — AI-powered search engine with real-time citations. The best tool for research, competitive intelligence, and fact-checked answers.
-- <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=16" width="16" height="16" /> [GPT Image 2](https://openai.com/index/introducing-4o-image-generation/) — OpenAI's latest image generation model with photorealistic quality, perfect for marketing assets and product visuals.
 - <img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=16" width="16" height="16" /> [Google AI Studio](https://aistudio.google.com/) — Free platform to prototype and build with Gemini models. Ideal for solo devs exploring AI integration.
+- <img src="https://www.google.com/s2/favicons?domain=kimi.moonshot.cn&sz=16" width="16" height="16" /> [Kimi](https://kimi.moonshot.cn/) — Chinese AI with industry-leading long context window. Excellent for reading and analyzing long documents in Chinese and English.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [MetaGPT](https://github.com/FoundationAgents/MetaGPT) — Multi-agent framework that encodes human SOPs into role-based AI collaboration. Build a virtual software company with PM, architect, and engineer agents.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — Open platform for AI software developers as generalist agents. Code, shell, browse, and run evaluations in sandboxed environments.
+- <img src="https://www.google.com/s2/favicons?domain=perplexity.ai&sz=16" width="16" height="16" /> [Perplexity](https://www.perplexity.ai/) — AI-powered search engine with real-time citations. The best tool for research, competitive intelligence, and fact-checked answers.
+- <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=16" width="16" height="16" /> [GPT Image 2](https://openai.com/index/introducing-4o-image-generation/) — OpenAI's latest image generation model with photorealistic quality, perfect for marketing assets and product visuals.
 
 ### AI Agents
 
@@ -237,14 +237,14 @@ To keep this list useful and trustworthy:
 
 ### Video & Audio
 
-- <img src="https://www.google.com/s2/favicons?domain=kuaishou.com&sz=16" width="16" height="16" /> [Kling AI](https://klingai.com/) — By Kuaishou. Generates up to 2 minutes of video — 5× longer than competitors. Native audio generation. Best value for product walkthroughs and social content.
-- <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=16" width="16" height="16" /> [Runway](https://runwayml.com/) — Cinematic-quality AI video generation with advanced creative controls. Text-to-video, image-to-video, and AI editing for professional content.
-- <img src="https://www.google.com/s2/favicons?domain=pika.art&sz=16" width="16" height="16" /> [Pika](https://pika.art/) — Creative AI video with unique 'Pikaffects' — physics-based animations like melting, crushing, inflating. Perfect for scroll-stopping social hooks.
-- <img src="https://www.google.com/s2/favicons?domain=heygen.com&sz=16" width="16" height="16" /> [HeyGen](https://www.heygen.com/) — AI avatar video generation. Create talking-head videos with realistic digital humans. Supports 40+ languages for global content.
+- <img src="https://www.google.com/s2/favicons?domain=descript.com&sz=16" width="16" height="16" /> [Descript](https://www.descript.com/) — Edit video and podcasts like editing a document. AI transcription, filler-word removal, eye contact correction, and overdub voice cloning.
 - <img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=16" width="16" height="16" /> [ElevenLabs](https://elevenlabs.io/) — Industry-leading AI voice platform. Voice cloning from seconds of audio, 70+ languages, near-indistinguishable from real speech. The standard for AI voice.
+- <img src="https://www.google.com/s2/favicons?domain=heygen.com&sz=16" width="16" height="16" /> [HeyGen](https://www.heygen.com/) — AI avatar video generation. Create talking-head videos with realistic digital humans. Supports 40+ languages for global content.
+- <img src="https://www.google.com/s2/favicons?domain=kuaishou.com&sz=16" width="16" height="16" /> [Kling AI](https://klingai.com/) — By Kuaishou. Generates up to 2 minutes of video — 5× longer than competitors. Native audio generation. Best value for product walkthroughs and social content.
 - <img src="https://www.google.com/s2/favicons?domain=notebooklm.google&sz=16" width="16" height="16" /> [NotebookLM](https://notebooklm.google.com/) — Upload documents, get an AI podcast discussing them. Turns research papers, notes, and articles into conversational audio summaries.
 - <img src="https://www.google.com/s2/favicons?domain=otter.ai&sz=16" width="16" height="16" /> [Otter.ai](https://otter.ai/) — Meeting transcription and summary. Integrates with Zoom, Meet, and Teams. Auto-generates action items and follow-ups.
-- <img src="https://www.google.com/s2/favicons?domain=descript.com&sz=16" width="16" height="16" /> [Descript](https://www.descript.com/) — Edit video and podcasts like editing a document. AI transcription, filler-word removal, eye contact correction, and overdub voice cloning.
+- <img src="https://www.google.com/s2/favicons?domain=pika.art&sz=16" width="16" height="16" /> [Pika](https://pika.art/) — Creative AI video with unique 'Pikaffects' — physics-based animations like melting, crushing, inflating. Perfect for scroll-stopping social hooks.
+- <img src="https://www.google.com/s2/favicons?domain=runwayml.com&sz=16" width="16" height="16" /> [Runway](https://runwayml.com/) — Cinematic-quality AI video generation with advanced creative controls. Text-to-video, image-to-video, and AI editing for professional content.
 
 ### SEO & GEO
 
@@ -252,8 +252,8 @@ To keep this list useful and trustworthy:
 
 ### Customer Support
 
-- <img src="https://www.google.com/s2/favicons?domain=intercom.com&sz=16" width="16" height="16" /> [Intercom Fin](https://www.intercom.com/resources/ai/fin) — AI customer support that resolves tickets using your knowledge base. Handles common questions 24/7. The gold standard for AI support.
 - <img src="https://www.google.com/s2/favicons?domain=crisp.chat&sz=16" width="16" height="16" /> [Crisp](https://crisp.chat/) — All-in-one messaging with AI chatbot, live chat, knowledge base, and CRM. Generous free tier makes it perfect for early-stage products.
+- <img src="https://www.google.com/s2/favicons?domain=intercom.com&sz=16" width="16" height="16" /> [Intercom Fin](https://www.intercom.com/resources/ai/fin) — AI customer support that resolves tickets using your knowledge base. Handles common questions 24/7. The gold standard for AI support.
 
 ### Sales & Outbound
 
