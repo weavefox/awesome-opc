@@ -6,7 +6,7 @@
 
 Help solo founders find direction, build faster, and thrive independently.
 
-<img src="./assets/awesome-opc.png" alt="Awesome OPC" width="600" />
+<img src="./assets/awesome-opc.png" alt="Awesome OPC" width="768" />
 
 [Introduction](#introduction) · [OPC Starter](#-opc-starter) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources) · [OPC Products](#-opc-products)
 
@@ -159,50 +159,50 @@ To keep this list useful and trustworthy:
 
 ### Building & Development
 
-- <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=16" width="16" height="16" /> [Vercel](https://vercel.com/) — Zero-config deployment platform for frontend and full-stack apps. Free tier is generous for solo projects.
-- <img src="https://www.google.com/s2/favicons?domain=supabase.com&sz=16" width="16" height="16" /> [Supabase](https://supabase.com/) — Open-source Firebase alternative with Postgres database, auth, storage, and edge functions.
-- <img src="https://www.google.com/s2/favicons?domain=railway.app&sz=16" width="16" height="16" /> [Railway](https://railway.app/) — Deploy backends, databases, and cron jobs in seconds. Great DX for solo devs.
 - <img src="https://www.google.com/s2/favicons?domain=lovable.dev&sz=16" width="16" height="16" /> [Lovable](https://lovable.dev/) — AI-powered full-stack app builder. Describe what you want in plain language and get a working app.
+- <img src="https://www.google.com/s2/favicons?domain=railway.app&sz=16" width="16" height="16" /> [Railway](https://railway.app/) — Deploy backends, databases, and cron jobs in seconds. Great DX for solo devs.
+- <img src="https://www.google.com/s2/favicons?domain=supabase.com&sz=16" width="16" height="16" /> [Supabase](https://supabase.com/) — Open-source Firebase alternative with Postgres database, auth, storage, and edge functions.
+- <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=16" width="16" height="16" /> [Vercel](https://vercel.com/) — Zero-config deployment platform for frontend and full-stack apps. Free tier is generous for solo projects.
 - <img src="https://www.google.com/s2/favicons?domain=weavefox.cn&sz=16" width="16" height="16" /> [WeaveFox](https://www.weavefox.cn/) — Free AIGC platform that turns text prompts into full-stack applications with one-click deployment.
 
 ### Design & UI
 
 - <img src="https://www.google.com/s2/favicons?domain=figma.com&sz=16" width="16" height="16" /> [Figma](https://www.figma.com/) — Industry-standard collaborative design tool. Free for individual use.
-- <img src="https://www.google.com/s2/favicons?domain=ui.shadcn.com&sz=16" width="16" height="16" /> [Shadcn/ui](https://ui.shadcn.com/) — Beautiful, copy-paste React components built on Radix UI and Tailwind CSS.
 - <img src="https://www.google.com/s2/favicons?domain=framer.com&sz=16" width="16" height="16" /> [Framer](https://www.framer.com/) — Build and publish stunning websites visually, no code required.
 - <img src="https://www.google.com/s2/favicons?domain=stitch.withgoogle.com&sz=16" width="16" height="16" /> [Google Stitch](https://stitch.withgoogle.com/) — AI-powered UI design tool by Google that generates mobile and web UIs from text or image prompts.
+- <img src="https://www.google.com/s2/favicons?domain=ui.shadcn.com&sz=16" width="16" height="16" /> [Shadcn/ui](https://ui.shadcn.com/) — Beautiful, copy-paste React components built on Radix UI and Tailwind CSS.
 
 ### Marketing & Growth
 
-- <img src="https://www.google.com/s2/favicons?domain=plausible.io&sz=16" width="16" height="16" /> [Plausible](https://plausible.io/) — Privacy-friendly, lightweight web analytics. No cookie banners needed.
 - <img src="https://www.google.com/s2/favicons?domain=beehiiv.com&sz=16" width="16" height="16" /> [Beehiiv](https://www.beehiiv.com/) — Newsletter platform with built-in growth tools, monetization, and analytics.
+- <img src="https://www.google.com/s2/favicons?domain=plausible.io&sz=16" width="16" height="16" /> [Plausible](https://plausible.io/) — Privacy-friendly, lightweight web analytics. No cookie banners needed.
 - <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [Twitter / X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
 
 ### Finance & Accounting
 
+- <img src="https://www.google.com/s2/favicons?domain=aipay.alipay.com&sz=16" width="16" height="16" /> [Alipay AI Pay](https://aipay.alipay.com/) — AI-native payment solution by Alipay that enables AI agents to handle transactions seamlessly. 100M+ users, ideal for agentic commerce.
+- <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — All-in-one payments, tax, and subscriptions platform — acts as your merchant of record.
 - <img src="https://www.google.com/s2/favicons?domain=llcclass.com&sz=16" width="16" height="16" /> [LLC Class](https://llcclass.com) — [Wyoming LLC registration](https://llcclass.com/wyoming) for non-US solo founders — includes [registered agent for LLC](https://llcclass.com/what-is-llc-registered-agent), EIN, and Operating Agreement to unlock Stripe and US business banking.
 - <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=16" width="16" height="16" /> [Stripe](https://stripe.com/) — Payment infrastructure for the internet. Subscriptions, invoicing, and global payments.
 - <img src="https://www.google.com/s2/favicons?domain=xero.com&sz=16" width="16" height="16" /> [Xero](https://www.xero.com/) — Cloud-based accounting software designed for small businesses and solo operators.
-- <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — All-in-one payments, tax, and subscriptions platform — acts as your merchant of record.
-- <img src="https://www.google.com/s2/favicons?domain=aipay.alipay.com&sz=16" width="16" height="16" /> [Alipay AI Pay](https://aipay.alipay.com/) — AI-native payment solution by Alipay that enables AI agents to handle transactions seamlessly. 100M+ users, ideal for agentic commerce.
 
 ### Productivity & Operations
 
-- <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=16" width="16" height="16" /> [Notion](https://www.notion.so/) — All-in-one workspace for notes, docs, project management, and wikis.
-- <img src="https://www.google.com/s2/favicons?domain=linear.app&sz=16" width="16" height="16" /> [Linear](https://linear.app/) — Fast, streamlined issue tracking and project management for builders who ship.
 - <img src="https://www.google.com/s2/favicons?domain=cal.com&sz=16" width="16" height="16" /> [Cal.com](https://cal.com/) — Open-source scheduling tool. Let customers book time with you effortlessly.
+- <img src="https://www.google.com/s2/favicons?domain=linear.app&sz=16" width="16" height="16" /> [Linear](https://linear.app/) — Fast, streamlined issue tracking and project management for builders who ship.
+- <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=16" width="16" height="16" /> [Notion](https://www.notion.so/) — All-in-one workspace for notes, docs, project management, and wikis.
 
 ### AI-Powered
 
-- <img src="https://www.google.com/s2/favicons?domain=cursor.sh&sz=16" width="16" height="16" /> [Cursor](https://cursor.sh/) — AI-first code editor that helps you build software faster with intelligent code generation.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [AutoGen](https://github.com/microsoft/autogen) — Microsoft's framework for building multi-agent workflows with tools, human input, and conversational handoff.
 - <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=16" width="16" height="16" /> [Claude](https://claude.ai/) — AI assistant for writing, analysis, coding, and creative work.
-- <img src="https://www.google.com/s2/favicons?domain=v0.dev&sz=16" width="16" height="16" /> [v0](https://v0.dev/) — AI-powered UI generation by Vercel. Describe your UI and get production-ready React code.
-- <img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=16" width="16" height="16" /> [Google AI Studio](https://aistudio.google.com/) — Free platform to prototype and build with Gemini models. Ideal for solo devs exploring AI integration.
+- <img src="https://www.google.com/s2/favicons?domain=cursor.sh&sz=16" width="16" height="16" /> [Cursor](https://cursor.sh/) — AI-first code editor that helps you build software faster with intelligent code generation.
 - <img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=16" width="16" height="16" /> [DeepSeek](https://www.deepseek.com/) — High-performance open-source AI models with strong reasoning and coding capabilities at low cost.
 - <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=16" width="16" height="16" /> [GPT Image 2](https://openai.com/index/introducing-4o-image-generation/) — OpenAI's latest image generation model with photorealistic quality, perfect for marketing assets and product visuals.
+- <img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=16" width="16" height="16" /> [Google AI Studio](https://aistudio.google.com/) — Free platform to prototype and build with Gemini models. Ideal for solo devs exploring AI integration.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [MetaGPT](https://github.com/FoundationAgents/MetaGPT) — Multi-agent framework that encodes human SOPs into role-based AI collaboration. Build a virtual software company with PM, architect, and engineer agents.
-- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [AutoGen](https://github.com/microsoft/autogen) — Microsoft's framework for building multi-agent workflows with tools, human input, and conversational handoff.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [OpenHands](https://github.com/All-Hands-AI/OpenHands) — Open platform for AI software developers as generalist agents. Code, shell, browse, and run evaluations in sandboxed environments.
+- <img src="https://www.google.com/s2/favicons?domain=v0.dev&sz=16" width="16" height="16" /> [v0](https://v0.dev/) — AI-powered UI generation by Vercel. Describe your UI and get production-ready React code.
 
 ---
 
