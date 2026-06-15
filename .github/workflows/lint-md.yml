@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Lint Markdown
-        run: npx -y @lint-md/cli $(git ls-files '*.md') -c .lintmdrc -s
+        run: git ls-files -z '*.md' | xargs -0r npx -y @lint-md/cli -c .lintmdrc -s
