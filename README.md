@@ -8,7 +8,7 @@ Help solo founders find direction, build faster, and thrive independently.
 
 <img src="./assets/awesome-opc.png" alt="Awesome OPC" width="768" />
 
-[Introduction](#introduction) · [OPC Starter](#-opc-starter) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources) · [OPC Products](#-opc-products)
+[Introduction](#introduction) · [OPC Starter](#-opc-starter) · [Policies](#-policies) · [Inspiration](#-inspiration) · [Tools](#-tools) · [Resources](#-resources)
 
 </div>
 
@@ -27,7 +27,7 @@ Help solo founders find direction, build faster, and thrive independently.
   - [Others](#others)
 - [💡 Inspiration](#-inspiration)
   - [Success Stories](#success-stories)
-  - [Notable One-Person Companies](#notable-one-person-companies)
+  - [Notable OPC Products](#notable-opc-products)
   - [Interviews & Talks](#interviews--talks)
 - [🛠 Tools](#-tools)
   - [Building & Development](#building--development)
@@ -48,7 +48,6 @@ Help solo founders find direction, build faster, and thrive independently.
   - [Communities](#communities)
   - [Courses](#courses)
   - [Reports](#reports)
-- [🚀 OPC Products](#-opc-products)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -143,12 +142,21 @@ To keep this list useful and trustworthy:
 - [Pieter Levels — $3M/yr as a Solo Founder](https://levels.io/) — Built Nomad List, Remote OK, and PhotoAI entirely solo, generating millions per year with zero employees.
 - [Maor Shlomo — Base44 Sold for $80M](https://medium.com/@ayushojha010/the-next-1-man-million-dollar-startup-why-2025-is-the-year-of-the-solo-founder-d220edd35203) — Solo-built AI startup acquired by Wix for $80M in cash, just six months after launch.
 - [AJ — Carrd](https://carrd.co/) — One person built Carrd into a widely-used landing page builder with millions of users and $1M+ ARR.
+- [Marc Lou — $1.03M/yr as an Indie Developer](https://shipfa.st/) — Built 25 projects, 12 profitable. Founder of ShipFast, the " Done For You" SaaS boilerplate.
+- [Nathan Barry — ConvertKit $29M ARR](https://convertkit.com/) — Built an email marketing platform for creators to 500K+ users and $29M ARR.
 
-### Notable One-Person Companies
+### Notable OPC Products
 
-- [Nomad List](https://nomadlist.com/) — The go-to platform for digital nomads to find the best cities to live and work remotely.
-- [PhotoAI](https://photoai.com/) — AI photo generator by Pieter Levels, reaching $100K+/month as a solo product.
-- [Bannerbear](https://www.bannerbear.com/) — Automated image and video generation API, bootstrapped to $600K ARR by solo founder Jon Yongfook.
+- <img src="https://www.google.com/s2/favicons?domain=bannerbear.com&sz=16" width="16" height="16" /> [Bannerbear](https://www.bannerbear.com/) — Automated image and video generation API, bootstrapped to $600K ARR by solo founder Jon Yongfook.
+- <img src="https://www.google.com/s2/favicons?domain=cubox.pro&sz=16" width="16" height="16" /> [Cubox](https://cubox.pro/) — Read-later app built by a solo Chinese founder. AI-powered note-taking and knowledge management.
+- <img src="https://www.google.com/s2/favicons?domain=designjoy.co&sz=16" width="16" height="16" /> [DesignJoy](https://www.designjoy.co/) — Brett Williams turned productized design into a $200K/month one-person agency with a subscription model.
+- <img src="https://www.google.com/s2/favicons?domain=nomadlist.com&sz=16" width="16" height="16" /> [Nomad List](https://nomadlist.com/) — The go-to platform for digital nomads to find the best cities to live and work remotely.
+- <img src="https://www.google.com/s2/favicons?domain=photoai.com&sz=16" width="16" height="16" /> [PhotoAI](https://photoai.com/) — AI photo generator by Pieter Levels, reaching $100K+/month as a solo product.
+- <img src="https://www.google.com/s2/favicons?domain=photopea.com&sz=16" width="16" height="16" /> [Photopea](https://www.photopea.com/) — A free browser-based Photoshop alternative built and maintained solo by Ivan Kutskir for 11+ years. Millions of daily users.
+- <img src="https://www.google.com/s2/favicons?domain=stardewvalley.net&sz=16" width="16" height="16" /> [Stardew Valley](https://www.stardewvalley.net/) — Eric Barone solo-built this farming RPG over 4.5 years. 50M+ copies sold, $500M+ revenue. One of the most successful indie games ever.
+- <img src="https://www.google.com/s2/favicons?domain=tldrnewsletter.com&sz=16" width="16" height="16" /> [TLDR Newsletter](https://tldr.tech/) — Dan Ni built a daily tech newsletter into a multi-million dollar AI-powered media business, solo.
+- <img src="https://www.google.com/s2/favicons?domain=typingmind.com&sz=16" width="16" height="16" /> [TypingMind](https://www.typingmind.com/) — Tony Dinh's AI chat interface that reached $45K MRR as a solo product, riding the ChatGPT wave.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [小熊猫C++ IDE](https://github.com/royqh1979/RedPanda-CPP) — Free C/C++ IDE for Windows built and maintained solo. ¥5万+/月 revenue.
 
 ### Interviews & Talks
 
@@ -167,10 +175,15 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=bolt.new&sz=16" width="16" height="16" /> [Bolt.new](https://bolt.new/) — Full-stack app from a single prompt — frontend, backend, database, and hosting. Free tier includes 1M tokens/month and unlimited databases.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [Claude Code](https://claude.com/claude-code) — Anthropic's terminal agent for complex engineering. Large refactors, architectural decisions, and debugging. The senior engineer in your terminal. (Product Hunt #1 2024)
 - <img src="https://www.google.com/s2/favicons?domain=cursor.sh&sz=16" width="16" height="16" /> [Cursor](https://cursor.sh/) — AI-first code editor with deep codebase understanding. Tab prediction goes beyond autocomplete — predicts next cursor position and code diffs. (Product Hunt Product of the Year 2024)
+- <img src="https://www.google.com/s2/favicons?domain=digitalocean.com&sz=16" width="16" height="16" /> [DigitalOcean](https://digitalocean.com/) — Simple cloud computing with $6/month starter VPS, good docs, and developer-friendly APIs.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [GitHub Copilot](https://github.com/features/copilot) — Inline code completion that integrates with all major editors. The most widely adopted AI coding tool in the world.
+- <img src="https://www.google.com/s2/favicons?domain=hetzner.com&sz=16" width="16" height="16" /> [Hetzner](https://hetzner.com/) — Budget-friendly German cloud provider. VPS starting at €4.5/month with excellent price-to-performance.
 - <img src="https://www.google.com/s2/favicons?domain=lovable.dev&sz=16" width="16" height="16" /> [Lovable](https://lovable.dev/) — Most beginner-friendly full-stack AI app builder. Generates clean React + Supabase apps from natural language prompts.
+- <img src="https://www.google.com/s2/favicons?domain=planetscale.com&sz=16" width="16" height="16" /> [PlanetScale](https://planetscale.com/) — Serverless MySQL platform with branching, horizontal scaling, and instant schema changes.
 - <img src="https://www.google.com/s2/favicons?domain=railway.app&sz=16" width="16" height="16" /> [Railway](https://railway.app/) — Deploy backends, databases, and cron jobs in seconds. Great DX for solo devs.
 - <img src="https://www.google.com/s2/favicons?domain=supabase.com&sz=16" width="16" height="16" /> [Supabase](https://supabase.com/) — Open-source Firebase alternative — the default backend for solo SaaS. Postgres, auth, storage, real-time, and edge functions in one. (Product Hunt DEV TOOL WINNER)
+- <img src="https://www.google.com/s2/favicons?domain=turso.tech&sz=16" width="16" height="16" /> [Turso](https://turso.tech/) — Edge-hosted SQLite database. LibSQL implementation with excellent DX and replication options.
+- <img src="https://www.google.com/s2/favicons?domain=upstash.com&sz=16" width="16" height="16" /> [Upstash](https://upstash.com/) — Serverless Redis and Kafka. Pay-per-request with global replication, perfect for serverless workloads.
 - <img src="https://www.google.com/s2/favicons?domain=v0.dev&sz=16" width="16" height="16" /> [v0](https://v0.dev/) — AI UI component generator by Vercel. Produces production-quality React/Next.js code with shadcn/ui and Tailwind.
 - <img src="https://www.google.com/s2/favicons?domain=vercel.com&sz=16" width="16" height="16" /> [Vercel](https://vercel.com/) — Zero-config deployment platform for frontend and full-stack apps. Git push → production.
 - <img src="https://www.google.com/s2/favicons?domain=weavefox.cn&sz=16" width="16" height="16" /> [WeaveFox](https://www.weavefox.cn/) — Free AIGC platform that turns text prompts into full-stack applications with one-click deployment.
@@ -192,15 +205,20 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=beehiiv.com&sz=16" width="16" height="16" /> [Beehiiv](https://www.beehiiv.com/) — Newsletter platform built for growth. 0% revenue share, built-in referral system, ad network, and AI website builder. Native MCP integration for Claude.
 - <img src="https://www.google.com/s2/favicons?domain=buffer.com&sz=16" width="16" height="16" /> [Buffer](https://buffer.com/) — Social media scheduling and analytics with AI caption suggestions. Manage all platforms from one dashboard.
 - <img src="https://www.google.com/s2/favicons?domain=plausible.io&sz=16" width="16" height="16" /> [Plausible](https://plausible.io/) — Privacy-friendly, lightweight web analytics. No cookie banners needed.
+- <img src="https://www.google.com/s2/favicons?domain=posthog.com&sz=16" width="16" height="16" /> [PostHog](https://posthog.com/) — Full-featured product analytics. Session recording, feature flags, A/B testing, and self-hosted option. Free tier up to 1M events/month.
+- <img src="https://www.google.com/s2/favicons?domain=umami.is&sz=16" width="16" height="16" /> [Umami](https://umami.is/) — Open-source web analytics. Simple, privacy-focused, and self-hostable for free.
 - <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
 
 ### Finance & Accounting
 
 - <img src="https://www.google.com/s2/favicons?domain=aipay.alipay.com&sz=16" width="16" height="16" /> [Alipay AI Pay](https://aipay.alipay.com/) — AI-native payment solution by Alipay that enables AI agents to handle transactions seamlessly. 100M+ users, ideal for agentic commerce.
+- <img src="https://www.google.com/s2/favicons?domain=b.alipay.com&sz=16" width="16" height="16" /> [支付宝](https://b.alipay.com/) — Alibaba's payment platform. 0.6% fee, required for serving Chinese customers.
 - <img src="https://www.google.com/s2/favicons?domain=fondo.com&sz=16" width="16" height="16" /> [Fondo](https://www.fondo.com/) — AI-powered bookkeeping for startups. Automated categorization, monthly closes, tax preparation, and R&D tax credits.
 - <img src="https://www.google.com/s2/favicons?domain=lemonsqueezy.com&sz=16" width="16" height="16" /> [Lemon Squeezy](https://www.lemonsqueezy.com/) — Merchant of record for digital products. Handles global tax, billing, VAT, and compliance — so you don't have to.
 - <img src="https://www.google.com/s2/favicons?domain=llcclass.com&sz=16" width="16" height="16" /> [LLC Class](https://llcclass.com) — [Wyoming LLC registration](https://llcclass.com/wyoming) for non-US solo founders — includes [registered agent for LLC](https://llcclass.com/what-is-llc-registered-agent), EIN, and Operating Agreement to unlock Stripe and US business banking.
 - <img src="https://www.google.com/s2/favicons?domain=mercury.com&sz=16" width="16" height="16" /> [Mercury](https://mercury.com/) — Banking built for startups. Treasury, corporate cards, and financial workflows designed for one-person companies. No fees.
+- <img src="https://www.google.com/s2/favicons?domain=paddle.com&sz=16" width="16" height="16" /> [Paddle](https://paddle.com/) — Merchant of record specializing in EU compliance. Handles VAT, tax, and global billing — 5% + $0.50 fee.
+- <img src="https://www.google.com/s2/favicons?domain=pay.weixin.qq.com&sz=16" width="16" height="16" /> [微信支付](https://pay.weixin.qq.com/) — China's dominant mobile payment. 0.6% fee, essential for Chinese market.
 - <img src="https://www.google.com/s2/favicons?domain=quickbooks.intuit.com&sz=16" width="16" height="16" /> [QuickBooks Solopreneur](https://quickbooks.intuit.com/solopreneur/) — Auto-categorizes expenses, tracks mileage, captures receipts, and estimates quarterly taxes.
 - <img src="https://www.google.com/s2/favicons?domain=stripe.com&sz=16" width="16" height="16" /> [Stripe](https://stripe.com/) — The default payment infrastructure for SaaS. Checkout, subscriptions, invoicing, and customer portal. Powers millions of one-person companies.
 - <img src="https://www.google.com/s2/favicons?domain=xero.com&sz=16" width="16" height="16" /> [Xero](https://www.xero.com/) — Cloud-based accounting software designed for small businesses and solo operators.
@@ -208,11 +226,13 @@ To keep this list useful and trustworthy:
 ### Productivity & Operations
 
 - <img src="https://www.google.com/s2/favicons?domain=cal.com&sz=16" width="16" height="16" /> [Cal.com](https://cal.com/) — Open-source scheduling with booking pages, round-robin, and workflow automation. The Calendly alternative that respects your data.
+- <img src="https://www.google.com/s2/favicons?domain=carrd.co&sz=16" width="16" height="16" /> [Carrd](https://carrd.co/) — Ultra-simple one-page sites for solo founders. $9-49/year flat fee, perfect for landing pages and mini-products.
 - <img src="https://www.google.com/s2/favicons?domain=linear.app&sz=16" width="16" height="16" /> [Linear](https://linear.app/) — Fast, streamlined issue tracking and project management for builders who ship.
 - <img src="https://www.google.com/s2/favicons?domain=make.com&sz=16" width="16" height="16" /> [Make](https://www.make.com/) — Visual workflow automation — the sweet spot between Zapier's ease and n8n's power. See the actual logic, add JS when needed.
 - <img src="https://www.google.com/s2/favicons?domain=n8n.io&sz=16" width="16" height="16" /> [n8n](https://n8n.io/) — Open-source workflow automation with unlimited workflows and zero usage fees. Full code access when needed.
 - <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=16" width="16" height="16" /> [Notion AI](https://www.notion.so/product/ai) — All-in-one workspace with AI. Docs, databases, projects, meeting summaries, and knowledge base. The operating system for one-person companies.
 - <img src="https://www.google.com/s2/favicons?domain=reclaim.ai&sz=16" width="16" height="16" /> [Reclaim.ai](https://reclaim.ai/) — AI calendar that defends focus blocks, schedules habits, and finds optimal meeting slots based on your energy patterns.
+- <img src="https://www.google.com/s2/favicons?domain=super.so&sz=16" width="16" height="16" /> [Super](https://super.so/) — Turn Notion into a website. $12/month for a beautiful, fast site with your Notion content as the CMS.
 - <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=16" width="16" height="16" /> [Zapier](https://zapier.com/) — Connect 7,000+ apps with AI decision steps. The easiest automation for non-technical founders.
 
 ### AI-Powered
@@ -254,6 +274,7 @@ To keep this list useful and trustworthy:
 
 - <img src="https://www.google.com/s2/favicons?domain=crisp.chat&sz=16" width="16" height="16" /> [Crisp](https://crisp.chat/) — All-in-one messaging with AI chatbot, live chat, knowledge base, and CRM. Generous free tier makes it perfect for early-stage products.
 - <img src="https://www.google.com/s2/favicons?domain=intercom.com&sz=16" width="16" height="16" /> [Intercom Fin](https://www.intercom.com/resources/ai/fin) — AI customer support that resolves tickets using your knowledge base. Handles common questions 24/7. The gold standard for AI support.
+- <img src="https://www.google.com/s2/favicons?domain=tawk.to&sz=16" width="16" height="16" /> [Tawk.to](https://www.tawk.to/) — Completely free live chat with unlimited agents. Perfect for budget-conscious solo founders.
 
 ### Sales & Outbound
 
@@ -271,12 +292,20 @@ To keep this list useful and trustworthy:
 - [The Lean Startup](https://theleanstartup.com/) — Eric Ries' classic on building businesses through validated learning and rapid iteration.
 - [Company of One](https://www.goodreads.com/book/show/37570605-company-of-one) — Paul Jarvis makes the case for staying small intentionally and building a sustainable solo business.
 - [MAKE: Bootstrapper's Handbook](https://readmake.com/) — Pieter Levels' practical playbook on shipping products, finding customers, and growing as a solo maker.
+- [The Mom Test](https://momtestbook.com/) — Rob Fitzpatrick's guide to talking to customers and validating business ideas through conversations.
+- [The Minimalist Entrepreneur](https://sahillavingia.com/book) — Sahil Lavingia's book on how to start a business without funding, from the founder of Gumroad.
+- [Zero to One](https://www.amazon.com/Zero-One-Notes-Startups-Future-ebook/dp/B00J6Y5WJQ) — Peter Thiel's contrarian view on innovation and building something truly new.
+- [Rework](https://basecamp.com/books/rework) — Basecamp's counter-intuitive approach to business that challenges traditional startup wisdom.
+- [The Personal MBA](https://personalmba.com/) — Josh Kaufman's fast-track business education covering fundamentals without the MBA price tag.
 
 ### Newsletters
 
 - <img src="https://www.google.com/s2/favicons?domain=kit.com&sz=16" width="16" height="16" /> [Kit (ConvertKit)](https://kit.com/) — Email-first operating system for creators. Industry-leading automation sequences and digital product sales. Best for creators who sell.
+- <img src="https://www.google.com/s2/favicons?domain=resend.com&sz=16" width="16" height="16" /> [Resend](https://resend.com/) — Developer-first email API. 3K free emails/month, excellent deliverability, and React email component library.
+- <img src="https://www.google.com/s2/favicons?domain=mailerlite.com&sz=16" width="16" height="16" /> [MailerLite](https://www.mailerlite.com/) — Simple email marketing with automation. 1K free subscribers, drag-and-drop editor, and landing pages.
 - [Indie Hackers Newsletter](https://www.indiehackers.com/) — Weekly stories, strategies, and revenue numbers from solo founders building profitable businesses.
 - [The Bootstrapped Founder](https://thebootstrappedfounder.com/) — Arvid Kahl's newsletter on building, growing, and selling bootstrapped SaaS companies.
+- [Small Bets](https://smallbets.co/) — Daniel Vassallo's newsletter on building diversified income streams through small bets.
 - [Starter Story](https://www.starterstory.com/) — Case studies and interviews with founders who started successful businesses, many solo.
 
 ### Podcasts
@@ -284,18 +313,25 @@ To keep this list useful and trustworthy:
 - [Indie Hackers Podcast](https://www.indiehackers.com/podcasts) — Interviews with solo founders sharing how they built profitable online businesses from scratch.
 - [The Bootstrapped Founder Podcast](https://thebootstrappedfounder.com/podcast/) — Arvid Kahl explores the journey of bootstrapped founders, from idea to exit.
 - [My First Million](https://www.mfmpod.com/) — Sam Parr and Shaan Puri brainstorm business ideas and interview successful entrepreneurs.
+- [津津乐道](https://www.xiaoyuzhoufm.com/) — Chinese podcast on tech and startup topics hosted by industry veterans.
+- [无人知晓](https://www.xiaoyuzhoufm.com/) — Chinese podcast featuring indie developers and their journeys.
 
 ### Communities
 
 - [Indie Hackers](https://www.indiehackers.com/) — The largest community for solo founders and indie makers to connect, share, and learn.
 - [r/SideProject](https://www.reddit.com/r/SideProject/) — Reddit community for sharing side projects, getting feedback, and finding collaborators.
 - [MicroConf Connect](https://microconf.com/) — Community and conferences for bootstrapped SaaS founders, with a strong focus on solo and small teams.
+- [电鸭社区](https://eleduck.com/) — Chinese community for remote work and indie developers.
+- [INDEV独立开发者社区](https://indev.cn/) — Chinese community for independent developers to share and learn.
+- [V2EX](https://v2ex.com/) — Tech-focused community in China for developers and entrepreneurs.
 
 ### Courses
 
 - [The Indie Course by Pieter Levels](https://indiecourse.com/) — Learn to build and launch profitable startups solo, from the maker of Nomad List.
 - [30x500 Academy](https://30x500.com/) — Amy Hoy's course on finding customers, understanding their pain, and building products that sell.
 - [Marketing for Developers](https://devmarketing.xyz/) — Justin Jackson's guide for technical founders on finding customers and growing revenue.
+- [Y Combinator Startup School](https://startupschool.org/) — Free online course from YC on how to start a startup.
+- [FreeCodeCamp](https://freecodecamp.org/) — Free coding curriculum and full-stack development learning path.
 
 ### Reports
 
@@ -305,18 +341,6 @@ To keep this list useful and trustworthy:
 - [KPMG Zero-Person Company Experiment](https://kpmg.com/nl/en/about-us/press-and-media/press-releases/2025/11/ai-zero-person-company-experiment.html) — One of the clearest public experiments asking whether AI agents can run company functions with minimal human supervision.
 - [Gusto 2026 New Business Formation Report](https://gusto.com/resources/gusto-insights/new-business-formation-2026) — How AI is changing who starts businesses and how solo founders launch operations.
 - [Stripe Sessions 2026: Indexing the Economy](https://stripe.com/en-cz/sessions/2026/indexing-the-economy) — Industry context for smaller, faster business entities, embedded finance, and nanocorp narratives.
-
----
-
-## 🚀 OPC Products
-
-*Real products built and run by one person — proof that solo founders can build at scale.*
-
-- <img src="https://www.google.com/s2/favicons?domain=stardewvalley.net&sz=16" width="16" height="16" /> [Stardew Valley](https://www.stardewvalley.net/) — Eric Barone solo-built this farming RPG over 4.5 years. 50M+ copies sold, $500M+ revenue. One of the most successful indie games ever.
-- <img src="https://www.google.com/s2/favicons?domain=photopea.com&sz=16" width="16" height="16" /> [Photopea](https://www.photopea.com/) — A free browser-based Photoshop alternative built and maintained solo by Ivan Kutskir for 11+ years. Millions of daily users.
-- <img src="https://www.google.com/s2/favicons?domain=designjoy.co&sz=16" width="16" height="16" /> [DesignJoy](https://www.designjoy.co/) — Brett Williams turned productized design into a $200K/month one-person agency with a subscription model.
-- <img src="https://www.google.com/s2/favicons?domain=tldrnewsletter.com&sz=16" width="16" height="16" /> [TLDR Newsletter](https://tldr.tech/) — Dan Ni built a daily tech newsletter into a multi-million dollar AI-powered media business, solo.
-- <img src="https://www.google.com/s2/favicons?domain=typingmind.com&sz=16" width="16" height="16" /> [TypingMind](https://www.typingmind.com/) — Tony Dinh's AI chat interface that reached $45K MRR as a solo product, riding the ChatGPT wave.
 
 ---
 
