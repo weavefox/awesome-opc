@@ -156,7 +156,7 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=stardewvalley.net&sz=16" width="16" height="16" /> [Stardew Valley](https://www.stardewvalley.net/) — Eric Barone solo-built this farming RPG over 4.5 years. 50M+ copies sold, $500M+ revenue. One of the most successful indie games ever.
 - <img src="https://www.google.com/s2/favicons?domain=tldrnewsletter.com&sz=16" width="16" height="16" /> [TLDR Newsletter](https://tldr.tech/) — Dan Ni built a daily tech newsletter into a multi-million dollar AI-powered media business, solo.
 - <img src="https://www.google.com/s2/favicons?domain=typingmind.com&sz=16" width="16" height="16" /> [TypingMind](https://www.typingmind.com/) — Tony Dinh's AI chat interface that reached $45K MRR as a solo product, riding the ChatGPT wave.
-- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [小熊猫C++ IDE](https://github.com/royqh1979/RedPanda-CPP) — Free C/C++ IDE for Windows built and maintained solo. ¥5万+/月 revenue.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [小熊猫 C++ IDE](https://github.com/royqh1979/RedPanda-CPP) — Free C/C++ IDE for Windows built and maintained solo. ¥5 万+/月 revenue.
 
 ### Interviews & Talks
 
@@ -322,7 +322,7 @@ To keep this list useful and trustworthy:
 - [r/SideProject](https://www.reddit.com/r/SideProject/) — Reddit community for sharing side projects, getting feedback, and finding collaborators.
 - [MicroConf Connect](https://microconf.com/) — Community and conferences for bootstrapped SaaS founders, with a strong focus on solo and small teams.
 - [电鸭社区](https://eleduck.com/) — Chinese community for remote work and indie developers.
-- [INDEV独立开发者社区](https://indev.cn/) — Chinese community for independent developers to share and learn.
+- [INDEV 独立开发者社区](https://indev.cn/) — Chinese community for independent developers to share and learn.
 - [V2EX](https://v2ex.com/) — Tech-focused community in China for developers and entrepreneurs.
 
 ### Courses
