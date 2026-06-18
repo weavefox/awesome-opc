@@ -1,0 +1,295 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const starterSteps = [
+  { number: '01', title: '寻找利基 (Find niche)', desc: '选择一个具体的问题，验证需求，并确认用户的付费意愿。这是成功的基石。' },
+  { number: '02', title: '注册公司 (Register)', desc: '选择法律结构（如 LLC、个体户等），并在初创阶段开设商业银行账户。' },
+  { number: '03', title: '构建 MVP (Build MVP)', desc: '发布能提供价值的最简版本。利用 AI 工具（如 Cursor, v0）极速迭代。' },
+  { number: '04', title: '设置支付 (Payments)', desc: '集成 Stripe, Lemon Squeezy 或支付宝。从第一天起就开始追踪财务状况。' },
+  { number: '05', title: '启动与获客 (Launch)', desc: '去你的受众所在的地方。在公开场合构建 (Build in Public)。前 10 个用户 > 前 1 万个。' },
+  { number: '06', title: '自动化与规模化 (Automate)', desc: '利用 AI Agent 和 SaaS 工具处理支持、营销、运营。实现单人规模化。' }
+];
+
+const policiesLinks = [
+  { text: '《中华人民共和国公司法》2023修订', icon: 'description' },
+  { text: '上海/杭州一人公司扶持政策', icon: 'location_on' },
+  { text: '深圳个体工商户高质量发展措施', icon: 'trending_up' }
+];
+
+const globalPoliciesLinks = [
+  { text: '美国 SBA 商业结构指南', icon: 'public' },
+  { text: '欧盟单人有限责任公司指令', icon: 'euro_symbol' },
+  { text: '新加坡 ACRA 注册指南', icon: 'flag' }
+];
+
+const inspirations = [
+  { icon: 'stars', text: 'Pieter Levels — 年入 $3M' },
+  { icon: 'shopping_cart', text: 'Base44 — $80M 被收购' },
+  { icon: 'joystick', text: 'Stardew Valley — $500M' }
+];
+
+const toolCategories = [
+  { icon: 'code', title: '开发与构建', desc: 'Cursor, v0, Supabase, Vercel' },
+  { icon: 'palette', title: '设计与 UI', desc: 'Framer, Midjourney, Figma, Lovart' },
+  { icon: 'trending_up', title: '营销与增长', desc: 'Beehiiv, X (Twitter), Plausible' },
+  { icon: 'smart_toy', title: 'AI 代理人', desc: 'Manus, Replit Agent, Genspark' }
+];
+---
+
+<BaseLayout title="Awesome OPC - 一人公司的无限可能">
+  <Navbar currentPage="home" />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-24 md:py-40 bg-surface">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent"></div>
+      <div class="max-w-max-width mx-auto px-4 md:px-margin-desktop relative z-10 text-center">
+        <div class="inline-flex items-center space-x-2 bg-primary-fixed text-primary px-4 py-1.5 rounded-full mb-8">
+          <i data-lucide="rocket" class="text-[18px]"></i>
+          <span class="text-label-sm font-bold uppercase tracking-wider">一人公司时代已经到来</span>
+        </div>
+        <h1 class="text-headline-xl lg:text-[64px] font-bold text-on-surface mb-8 tracking-tight leading-[1.1]">
+          Awesome OPC<br />
+          <span class="text-primary">一个人，一家公司，无限可能</span>
+        </h1>
+        <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
+          这个项目汇集了个人创业者所需的一切——从了解政策法规，到从前人的成功故事中获取灵感，再到发现能够让单人公司高效运作的最佳工具。
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+          <a href="#starter" class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-3xl font-bold text-lg shadow-layered hover:shadow-xl transition-all hover:-translate-y-1">
+            开始行动
+          </a>
+          <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="w-full md:w-auto flex items-center justify-center space-x-2 border-2 border-outline-variant bg-white px-10 py-4 rounded-3xl font-bold text-lg hover:border-primary/30 hover:bg-surface-container-low transition-all">
+            <i data-lucide="star" class="text-[20px]"></i>
+            <span>Star on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPC Starter Section -->
+    <section class="py-32 bg-surface-container-lowest" id="starter">
+      <div class="max-w-max-width mx-auto px-4 md:px-margin-desktop">
+        <div class="flex flex-col lg:flex-row gap-20 items-start">
+          <div class="lg:w-2/5">
+            <div class="sticky top-32">
+              <h2 class="text-headline-lg font-bold text-on-surface mb-8 flex items-center gap-3">
+                <span class="p-2 bg-primary/10 rounded-xl text-primary">🎯</span>
+                OPC 入门指南
+              </h2>
+              <p class="text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                这是启动一人公司的快速清单。按照这些步骤，利用现代 AI 工具和无代码平台，快速从想法走向盈利。
+              </p>
+              <div class="p-8 bg-surface-container-low rounded-3xl border border-outline-variant">
+                <h3 class="font-bold text-on-surface mb-6 flex items-center text-lg">
+                  <i data-lucide="alert-triangle" class="mr-3 text-error w-5 h-5"></i>
+                  关键提醒
+                </h3>
+                <ul class="space-y-5 text-body-md font-medium text-on-surface-variant">
+                  <li class="flex items-start">
+                    <span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm mr-3 flex-shrink-0 mt-0.5">1</span>
+                    你是唯一的瓶颈 — 无情地优先处理。
+                  </li>
+                  <li class="flex items-start">
+                    <span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm mr-3 flex-shrink-0 mt-0.5">2</span>
+                    收入优先 — 一个付费客户胜过一千个星。
+                  </li>
+                  <li class="flex items-start">
+                    <span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-sm mr-3 flex-shrink-0 mt-0.5">3</span>
+                    自动化一切可重复的操作。
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-8">
+            {starterSteps.map((step) => (
+              <div class="bg-white p-10 rounded-3xl border border-outline-variant border-l-[6px] border-primary shadow-soft hover:shadow-layered transition-all duration-300 group">
+                <div class="text-4xl font-black text-primary/20 mb-6 group-hover:text-primary/40 transition-colors">{step.number}</div>
+                <h4 class="text-headline-md font-bold text-on-surface mb-4">{step.title}</h4>
+                <p class="text-body-md text-on-surface-variant leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-32 bg-surface">
+      <div class="max-w-max-width mx-auto px-4 md:px-margin-desktop">
+        <div class="text-center mb-20">
+          <h2 class="text-headline-lg font-bold text-on-surface mb-6">资源分类检索</h2>
+          <p class="text-body-lg text-on-surface-variant">深度挖掘一人公司生态系统的每一个角落</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Policies -->
+          <div class="col-span-12 md:col-span-8 bg-white p-12 rounded-3xl border border-outline-variant shadow-soft hover:shadow-layered transition-all duration-500" id="policies">
+            <div class="flex flex-col sm:flex-row justify-between items-start mb-16 gap-6">
+              <div>
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                  <i data-lucide="scale" class="text-primary w-9 h-9"></i>
+                </div>
+                <h3 class="text-headline-lg font-bold text-on-surface">🏛 政策与法规 (Policies)</h3>
+              </div>
+              <a href="/policies.html" class="text-primary font-bold flex items-center hover:gap-2 transition-all">
+                查看全部 <i data-lucide="arrow-right" class="ml-1 w-5 h-5"></i>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+              <div>
+                <h4 class="font-bold text-on-surface mb-6 flex items-center gap-2">
+                  <span class="w-1 h-6 bg-primary rounded-full"></span>
+                  中国
+                </h4>
+                <ul class="space-y-4 text-body-md">
+                  {policiesLinks.map(link => (
+                    <li>
+                      <a href="/policies.html" class="text-on-surface-variant hover:text-primary flex items-center gap-2 transition-colors">
+                        <i data-lucide="file-text" class="w-[18px] h-[18px]"></i>
+                        {link.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-on-surface mb-6 flex items-center gap-2">
+                  <span class="w-1 h-6 bg-primary rounded-full"></span>
+                  全球
+                </h4>
+                <ul class="space-y-4 text-body-md">
+                  {globalPoliciesLinks.map(link => (
+                    <li>
+                      <a href="/policies.html" class="text-on-surface-variant hover:text-primary flex items-center gap-2 transition-colors">
+                        <i data-lucide="globe" class="w-[18px] h-[18px]"></i>
+                        {link.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inspiration -->
+          <div class="col-span-12 md:col-span-4 vibrant-gradient text-on-primary p-12 rounded-3xl shadow-layered relative overflow-hidden flex flex-col justify-between" id="inspiration">
+            <div class="absolute -right-12 -top-12 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+              <i data-lucide="lightbulb" class="text-white w-14 h-14 mb-8"></i>
+              <h3 class="text-headline-lg font-bold mb-6 leading-tight">💡 灵感与故事 (Inspiration)</h3>
+              <p class="text-white/80 text-body-md mb-10 leading-relaxed">
+                看看那些已经走通这条路的先行者。从 Pieter Levels 到 Eric Barone，见证单兵作战的奇迹。
+              </p>
+              <ul class="space-y-5">
+                {inspirations.map(item => (
+                  <li class="flex items-center space-x-4">
+                    <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                      <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-label-md font-bold">{item.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <button class="mt-12 w-full py-4 bg-white text-primary rounded-3xl font-bold hover:bg-opacity-90 transition-all shadow-layered hover:scale-[1.02] active:scale-95">
+              阅读成功案例
+            </button>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-span-12 bg-white p-12 rounded-3xl border border-outline-variant shadow-soft hover:shadow-layered transition-all duration-500" id="tools">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
+              <div class="flex items-center space-x-6">
+                <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <i data-lucide="wrench" class="text-primary w-8 h-8"></i>
+                </div>
+                <h3 class="text-headline-lg font-bold text-on-surface">🛠 核心工具栈 (Tools)</h3>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <span class="bg-surface-container-high px-6 py-2 rounded-full text-label-sm font-bold text-on-surface-variant border border-outline-variant">AI-Powered</span>
+                <span class="bg-surface-container-high px-6 py-2 rounded-full text-label-sm font-bold text-on-surface-variant border border-outline-variant">Low-Code</span>
+                <span class="bg-surface-container-high px-6 py-2 rounded-full text-label-sm font-bold text-on-surface-variant border border-outline-variant">SaaS</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {toolCategories.map(cat => (
+                <div class="p-8 rounded-3xl bg-surface-container-low border-2 border-transparent hover:border-primary/20 hover:bg-white transition-all group">
+                  <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
+                    <i data-lucide="code" class="w-6 h-6"></i>
+                  </div>
+                  <h4 class="font-bold text-on-surface mb-4 text-lg">{cat.title}</h4>
+                  <p class="text-body-md text-on-surface-variant">{cat.desc}</p>
+                </div>
+              ))}
+            </div>
+            <div class="mt-8 text-center">
+              <a href="/tools.html" class="inline-flex items-center text-primary font-bold hover:gap-2 transition-all">
+                查看全部工具 <i data-lucide="arrow-right" class="ml-1 w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / CTA Section -->
+    <section class="py-32 bg-on-background text-on-primary relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(#a6311f 1px, transparent 1px); background-size: 40px 40px;"></div>
+      </div>
+      <div class="max-w-max-width mx-auto px-4 md:px-margin-desktop relative z-10 text-center">
+        <h2 class="text-headline-lg font-bold mb-8">加入一人公司观察者</h2>
+        <p class="text-white/70 text-body-lg mb-12 max-w-2xl mx-auto">
+          每周获取最新的政策解读、出海工具和一人公司案例研究。
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto bg-white/10 p-3 rounded-3xl backdrop-blur-md border border-white/10">
+          <input class="flex-grow px-8 py-5 rounded-2xl bg-white border-none text-on-surface focus:ring-4 focus:ring-primary/30 outline-none text-lg" placeholder="你的邮箱地址" type="email" />
+          <button class="bg-primary px-10 py-5 rounded-2xl font-bold text-lg hover:bg-opacity-90 transition-all hover:shadow-layered whitespace-nowrap" type="submit">
+            立即订阅
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .vibrant-gradient {
+    background: linear-gradient(135deg, #a6311f 0%, #c84934 100%);
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .bento-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.querySelector('form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = (e.target as HTMLFormElement).querySelector('button');
+    if (btn) {
+      const originalText = btn.innerText;
+      btn.innerText = '已发送！';
+      btn.style.backgroundColor = '#10B981';
+      setTimeout(() => {
+        btn.innerText = originalText;
+        (btn as HTMLButtonElement).style.backgroundColor = '';
+        (e.target as HTMLFormElement).reset();
+      }, 3000);
+    }
+  });
+</script>
