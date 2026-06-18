@@ -37,12 +37,19 @@ const { title, description = 'Awesome OPC - 一人公司的无限可能。汇集
     </style>
 
     <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.js"></script>
   </head>
-  <body class="bg-background text-on-surface font-inter min-h-screen">
+  <body class="bg-white text-on-surface font-inter min-h-screen">
     <slot />
     <script>
-      lucide.createIcons();
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.lucide) {
+          lucide.createIcons();
+        } else {
+          // Fallback: retry after a short delay
+          setTimeout(() => lucide && lucide.createIcons(), 100);
+        }
+      });
     </script>
   </body>
 </html>

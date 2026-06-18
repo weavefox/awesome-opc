@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 
+// 工具数据 - 包含 favicon
 const toolCategories = [
   {
     id: 'building',
@@ -10,9 +11,18 @@ const toolCategories = [
     icon: 'architecture',
     count: 12,
     tools: [
-      { name: 'Cursor', desc: 'AI 优先的代码编辑器。它不仅是自动补全，更能够深刻理解你的整个代码库，预测并协助你完成下一步操作。', category: '代码工具' },
-      { name: 'Supabase', desc: '开源的 Firebase 替代品，一人公司的后端首选。集成了 Postgres 数据库、鉴权系统、对象存储和 Edge Functions。', category: '后端服务' },
-      { name: 'Bolt.new', desc: '仅凭一段提示词即可生成全栈应用。包含前端、后端、数据库及自动托管，体验极致的构建速度。', category: '快速开发' }
+      { name: 'Cursor', domain: 'cursor.sh', desc: 'AI 优先的代码编辑器。它不仅是自动补全，更能够深刻理解你的整个代码库，预测并协助你完成下一步操作。', category: '代码工具', url: 'https://cursor.sh/' },
+      { name: 'Claude Code', domain: 'github.com', desc: 'Anthropic 的终端 AI 工程师。复杂重构、架构决策和调试。', category: '代码工具', url: 'https://claude.com/claude-code' },
+      { name: 'GitHub Copilot', domain: 'github.com', desc: '集成于所有主流编辑器的内联代码补全。世界最广泛采用的 AI 编码工具。', category: '代码工具', url: 'https://github.com/features/copilot' },
+      { name: 'Windsurf', domain: 'codeium.com', desc: 'AI 优先的 IDE，配备复杂多文件编辑的 Agent 流程。', category: '代码工具', url: 'https://codeium.com/windsurf' },
+      { name: 'Supabase', domain: 'supabase.com', desc: '开源的 Firebase 替代品，一人公司的后端首选。集成了 Postgres 数据库、鉴权系统、对象存储和 Edge Functions。', category: '后端服务', url: 'https://supabase.com/' },
+      { name: 'Vercel', domain: 'vercel.com', desc: '零配置部署平台。前端和全栈应用的 Git push → 生产。', category: '托管平台', url: 'https://vercel.com/' },
+      { name: 'Railway', domain: 'railway.app', desc: '几秒内部署后端、数据库和定时任务。极棒的开发者体验。', category: '托管平台', url: 'https://railway.app/' },
+      { name: 'Bolt.new', domain: 'bolt.new', desc: '仅凭一段提示词即可生成全栈应用。包含前端、后端、数据库及自动托管，体验极致的构建速度。', category: '快速开发', url: 'https://bolt.new/' },
+      { name: 'Lovable', domain: 'lovable.dev', desc: '最友好的初学者全栈 AI 应用构建器。从自然语言生成干净的 React + Supabase 应用。', category: '快速开发', url: 'https://lovable.dev/' },
+      { name: 'v0', domain: 'v0.dev', desc: 'Vercel 的 AI UI 组件生成器。生成生产级 React/Next.js 代码。', category: 'UI 组件', url: 'https://v0.dev/' },
+      { name: 'PlanetScale', domain: 'planetscale.com', desc: 'Serverless MySQL 平台，支持分支、水平扩展和即时架构变更。', category: '数据库', url: 'https://planetscale.com/' },
+      { name: 'Turso', domain: 'turso.tech', desc: 'Edge 托管的 SQLite 数据库。优秀的开发者体验和复制选项。', category: '数据库', url: 'https://turso.tech/' }
     ]
   },
   {
@@ -21,21 +31,44 @@ const toolCategories = [
     icon: 'palette',
     count: 8,
     tools: [
-      { name: 'Framer', desc: '无需任何代码即可通过视觉化手段构建惊艳的网站。最适合需要顶级审美的一人公司展示站点。', category: '无代码建站' },
-      { name: 'Lovart', desc: '全球首个 AI 设计智能体。协作画布专为品牌和营销设计——上传参考、勾勒草图、精细编辑。', category: 'AI 设计', featured: true },
-      { name: 'Shadcn/ui', desc: '基于 Radix UI 和 Tailwind CSS 的精美组件库。为开发者提供极致灵活且极简的 UI 构建基石。', category: 'UI 组件库' }
+      { name: 'Figma', domain: 'figma.com', desc: '行业标准的协作设计工具，配备强大的 AI 功能。', category: '设计工具', url: 'https://www.figma.com/' },
+      { name: 'Framer', domain: 'framer.com', desc: '无需任何代码即可通过视觉化手段构建惊艳的网站。最适合需要顶级审美的一人公司展示站点。', category: '无代码建站', url: 'https://www.framer.com/' },
+      { name: 'Midjourney', domain: 'midjourney.com', desc: '行业领先的 AI 图像生成。产品模型、市场视觉、插图和品牌图像的顶级美学质量。', category: 'AI 图像', url: 'https://www.midjourney.com/' },
+      { name: 'Canva', domain: 'canva.com', desc: '为非设计师打造的多合一设计工具。AI 辅助的营销图形、社交帖子、演示文稿、视频和文档。', category: '设计工具', url: 'https://www.canva.com/' },
+      { name: 'Adobe Firefly', domain: 'firefly.adobe.com', desc: 'Adobe 生态系统内的专业图像编辑和生成。商业安全的 AI 图像。', category: 'AI 图像', url: 'https://firefly.adobe.com/' },
+      { name: 'Lovart', domain: 'lovart.ai', desc: '全球首个 AI 设计智能体。协作画布专为品牌和营销设计。', category: 'AI 设计', featured: true, url: 'https://www.lovart.ai/' },
+      { name: 'Google Stitch', domain: 'stitch.withgoogle.com', desc: 'Google 的 AI UI 设计工具，从文本或图像提示生成移动和网页 UI。', category: 'AI 设计', url: 'https://stitch.withgoogle.com/' },
+      { name: 'Shadcn/ui', domain: 'ui.shadcn.com', desc: '基于 Radix UI 和 Tailwind CSS 的精美组件库。为开发者提供极致灵活且极简的 UI 构建基石。', category: 'UI 组件库', url: 'https://ui.shadcn.com/' }
+    ]
+  },
+  {
+    id: 'marketing',
+    name: '营销与增长',
+    icon: 'trending_up',
+    count: 8,
+    tools: [
+      { name: 'Beehiiv', domain: 'beehiiv.com', desc: '为增长而构建的通讯平台。0% 收入分成，内置推荐系统、广告网络和 AI 网站构建器。', category: '通讯', url: 'https://www.beehiiv.com/' },
+      { name: 'X (Twitter)', domain: 'x.com', desc: '单人创始人在公共平台上建立和增长受众的首选平台。', category: '社交媒体', url: 'https://x.com/' },
+      { name: 'Buffer', domain: 'buffer.com', desc: '社交媒体排程和分析，带 AI 标题建议。一个仪表板管理所有平台。', category: '社交媒体', url: 'https://buffer.com/' },
+      { name: 'Plausible', domain: 'plausible.io', desc: '注重隐私、轻量级的网页分析。不需要 Cookie 横幅。', category: '数据分析', url: 'https://plausible.io/' },
+      { name: 'PostHog', domain: 'posthog.com', desc: '全功能产品分析。会话录制、功能标志、A/B 测试和自托管选项。', category: '数据分析', url: 'https://posthog.com/' },
+      { name: 'Umami', domain: 'umami.is', desc: '开源网页分析。简单、注重隐私、可自托管免费使用。', category: '数据分析', url: 'https://umami.is/' }
     ]
   },
   {
     id: 'finance',
     name: '财务与会计',
     icon: 'payments',
-    count: 6,
+    count: 8,
     tools: [
-      { name: 'Lemon Squeezy', desc: '数字产品的记录商（MoR）。代扣全球税收，让你无忧开展跨境业务。', category: '支付网关' },
-      { name: 'Stripe', desc: '全球支付基建的标准。提供从结账、订阅到发票的一站式解决方案。', category: '支付网关', featured: true },
-      { name: 'Mercury', desc: '专为创业者设计的数字银行。无账户费，完美支持企业信用卡自动化流。', category: '银行服务' },
-      { name: 'Fondo', desc: 'AI 驱动的记账服务。自动分类税务申报，甚至能协助申请研发税收抵免。', category: '会计工具' }
+      { name: 'Stripe', domain: 'stripe.com', desc: '全球支付基建的标准。提供从结账、订阅到发票的一站式解决方案。', category: '支付网关', featured: true, url: 'https://stripe.com/' },
+      { name: 'Lemon Squeezy', domain: 'lemonsqueezy.com', desc: '数字产品的记录商（MoR）。代扣全球税收，让你无忧开展跨境业务。', category: '支付网关', url: 'https://www.lemonsqueezy.com/' },
+      { name: 'Paddle', domain: 'paddle.com', desc: '专注于 EU 合规的记录商。处理 VAT、税收和全球计费。', category: '支付网关', url: 'https://paddle.com/' },
+      { name: '支付宝', domain: 'b.alipay.com', desc: '阿里巴巴的支付平台。0.6% 费率，服务中国客户必备。', category: '支付网关', url: 'https://b.alipay.com/' },
+      { name: '微信支付', domain: 'pay.weixin.qq.com', desc: '中国主要的移动支付。0.6% 费率，中国市场必备。', category: '支付网关', url: 'https://pay.weixin.qq.com/' },
+      { name: 'Mercury', domain: 'mercury.com', desc: '专为创业者设计的数字银行。无账户费，完美支持企业信用卡自动化流。', category: '银行服务', url: 'https://mercury.com/' },
+      { name: 'Fondo', domain: 'fondo.com', desc: 'AI 驱动的记账服务。自动分类税务申报，甚至能协助申请研发税收抵免。', category: '会计工具', url: 'https://www.fondo.com/' },
+      { name: 'QuickBooks', domain: 'quickbooks.intuit.com', desc: '自动分类费用、追踪里程、捕获收据、估算季度税款。', category: '会计工具', url: 'https://quickbooks.intuit.com/solopreneur/' }
     ]
   },
   {
@@ -45,9 +78,12 @@ const toolCategories = [
     count: 15,
     featured: true,
     tools: [
-      { name: 'Claude', desc: '业界公认具备顶尖推理能力和超长上下文窗口。无论是代码重构、行业分析还是复杂逻辑推理，Claude 都是你一人公司最称职的虚拟 CTO。', category: '代码架构优化', premium: true },
-      { name: 'Perplexity', desc: '实时联网的 AI 搜索引擎。提供详尽的引用溯源，是进行市场研究和竞品分析的高效神器。', category: 'AI 搜索' },
-      { name: 'Kimi', desc: '国产 AI 中的长文本王者。极度适合阅读并总结超大体量的中文专业文档与研报。', category: '长文本处理' }
+      { name: 'Claude', domain: 'anthropic.com', desc: '业界公认具备顶尖推理能力和超长上下文窗口。无论是代码重构、行业分析还是复杂逻辑推理，Claude 都是你一人公司最称职的虚拟 CTO。', category: 'AI 助手', premium: true, url: 'https://claude.com/' },
+      { name: 'Perplexity', domain: 'perplexity.ai', desc: '实时联网的 AI 搜索引擎。提供详尽的引用溯源，是进行市场研究和竞品分析的高效神器。', category: 'AI 搜索', url: 'https://www.perplexity.ai/' },
+      { name: 'Kimi', domain: 'kimi.moonshot.cn', desc: '国产 AI 中的长文本王者。极度适合阅读并总结超大体量的中文专业文档与研报。', category: '长文本处理', url: 'https://kimi.moonshot.cn/' },
+      { name: 'ChatGPT', domain: 'openai.com', desc: 'OpenAI 的 AI 聊天助手，推动了生成式 AI 革命的里程碑产品。', category: 'AI 聊天', url: 'https://chat.openai.com/' },
+      { name: 'Gemini', domain: 'gemini.google.com', desc: 'Google 的多模态 AI 模型，擅长跨模态理解和生成。', category: 'AI 助手', url: 'https://gemini.google.com/' },
+      { name: 'DeepSeek', domain: 'deepseek.com', desc: '中国 AI 公司开发的高性能大模型，开源版本性能优秀。', category: 'AI 模型', url: 'https://www.deepseek.com/' }
     ]
   },
   {
@@ -56,9 +92,10 @@ const toolCategories = [
     icon: 'task_alt',
     count: 10,
     tools: [
-      { name: 'Notion', desc: 'All-in-one workspace for notes, docs, and project management. Perfect for organizing your OPC business.', category: '笔记与文档' },
-      { name: 'Linear', desc: 'Issue tracking for high-performance teams. Streamline your development workflow.', category: '项目管理' },
-      { name: 'Zapier', desc: 'Connect your apps and automate workflows. No coding required.', category: '自动化' }
+      { name: 'Notion', domain: 'notion.so', desc: 'All-in-one workspace for notes, docs, and project management. Perfect for organizing your OPC business.', category: '笔记与文档', url: 'https://www.notion.so/' },
+      { name: 'Linear', domain: 'linear.app', desc: 'Issue tracking for high-performance teams. Streamline your development workflow.', category: '项目管理', url: 'https://linear.app/' },
+      { name: 'Zapier', domain: 'zapier.com', desc: 'Connect your apps and automate workflows. No coding required.', category: '自动化', url: 'https://zapier.com/' },
+      { name: 'WeaveFox', domain: 'weavefox.cn', desc: '免费 AIGC 平台，文本提示一键生成全栈应用并部署。', category: '快速开发', url: 'https://www.weavefox.cn/' }
     ]
   },
   {
@@ -67,9 +104,9 @@ const toolCategories = [
     icon: 'movie',
     count: 8,
     tools: [
-      { name: 'Descript', desc: 'All-in-one audio/video editor. Edit videos like editing docs.', category: '视频编辑' },
-      { name: 'ElevenLabs', desc: 'AI voice generator with lifelike speech synthesis.', category: 'AI 语音' },
-      { name: 'CapCut', desc: 'Powerful video editor with AI features. Free and cross-platform.', category: '视频剪辑' }
+      { name: 'Descript', domain: 'descript.com', desc: 'All-in-one audio/video editor. Edit videos like editing docs.', category: '视频编辑', url: 'https://www.descript.com/' },
+      { name: 'ElevenLabs', domain: 'elevenlabs.io', desc: 'AI voice generator with lifelike speech synthesis.', category: 'AI 语音', url: 'https://elevenlabs.io/' },
+      { name: 'CapCut', domain: 'capcut.com', desc: 'Powerful video editor with AI features. Free and cross-platform.', category: '视频剪辑', url: 'https://www.capcut.com/' }
     ]
   }
 ];
@@ -102,7 +139,7 @@ const monthlyHighlight = {
                   class={`flex items-center gap-4 group transition-all ${idx === 0 ? 'nav-active text-primary' : 'text-on-surface-variant hover:text-primary'}`}
                   href={`#${cat.id}`}
                 >
-                  <i data-lucide="{cat.icon === 'architecture' ? 'layout-dashboard' : cat.icon === 'palette' ? 'palette' : cat.icon === 'payments' ? 'credit-card' : cat.icon === 'smart_toy' ? 'bot' : cat.icon === 'task_alt' ? 'check-circle' : cat.icon === 'movie' ? 'video' : 'wrench'}" class="w-[22px] h-[22px]"></i>
+                  <i data-lucide={cat.icon === 'architecture' ? 'layout-grid' : cat.icon === 'palette' ? 'palette' : cat.icon === 'payments' ? 'credit-card' : cat.icon === 'smart_toy' ? 'bot' : cat.icon === 'task_alt' ? 'check-circle' : cat.icon === 'movie' ? 'video' : cat.icon === 'trending_up' ? 'trending-up' : 'wrench'} class="w-[22px] h-[22px]"></i>
                   <span class={`font-geist ${idx === 0 ? 'font-semibold' : 'font-medium'}`}>{cat.name}</span>
                 </a>
               </li>
@@ -128,9 +165,9 @@ const monthlyHighlight = {
               <button class="bg-white text-primary px-8 md:px-10 py-4 rounded-full font-geist font-bold shadow-2xl shadow-black/10 hover:scale-105 active:scale-95 transition-all">
                 立即探索
               </button>
-              <button class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-8 md:px-10 py-4 rounded-full font-geist font-bold transition-all">
+              <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-8 md:px-10 py-4 rounded-full font-geist font-bold transition-all">
                 提交新资源
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -141,7 +178,7 @@ const monthlyHighlight = {
             <div class="flex items-end justify-between mb-12 border-b border-outline-variant/30 pb-6">
               <div class="flex items-center gap-5">
                 <div class={`w-12 h-12 rounded-2xl flex items-center justify-center ${cat.featured ? 'bg-primary text-white' : 'bg-primary/10 text-primary'}`}>
-                  <i data-lucide="{cat.icon === 'architecture' ? 'layout-dashboard' : cat.icon === 'palette' ? 'palette' : cat.icon === 'payments' ? 'credit-card' : cat.icon === 'smart_toy' ? 'bot' : cat.icon === 'task_alt' ? 'check-circle' : cat.icon === 'movie' ? 'video' : 'wrench'}" class="w-7 h-7"></i>
+                  <i data-lucide={cat.icon === 'architecture' ? 'layout-grid' : cat.icon === 'palette' ? 'palette' : cat.icon === 'payments' ? 'credit-card' : cat.icon === 'smart_toy' ? 'bot' : cat.icon === 'task_alt' ? 'check-circle' : cat.icon === 'movie' ? 'video' : cat.icon === 'trending_up' ? 'trending-up' : 'wrench'} class="w-7 h-7"></i>
                 </div>
                 <h2 class="font-headline-lg text-headline-lg text-on-surface">{cat.name}</h2>
               </div>
@@ -153,8 +190,12 @@ const monthlyHighlight = {
               {cat.tools.map((tool) => (
                 <div class={`tool-card group p-8 flex flex-col justify-between ${tool.premium ? 'border-2 border-primary/10 ai-glow bg-primary/[0.01]' : 'bg-surface-container-low border-2 border-transparent hover:border-primary/20 hover:bg-white'}`}>
                   <div>
-                    <div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                      <i data-lucide="{tool.category === '代码工具' ? 'code' : tool.category === '后端服务' ? 'database' : tool.category === '支付网关' ? 'credit-card' : tool.category === 'AI 语音' ? 'mic' : tool.category === '视频编辑' ? 'video' : 'sparkles'}" class="w-8 h-8"></i>
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 overflow-hidden border border-outline-variant/20 group-hover:border-primary/30 transition-all duration-500">
+                      <img
+                        src={`https://www.google.com/s2/favicons?domain=${tool.domain}&sz=64`}
+                        alt={tool.name}
+                        class="w-10 h-10"
+                      />
                     </div>
                     <div class="flex items-center gap-3 mb-3">
                       <h3 class="font-geist text-2xl font-bold text-on-surface">{tool.name}</h3>
@@ -166,7 +207,7 @@ const monthlyHighlight = {
                   </div>
                   <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
                     <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/40">{tool.category}</span>
-                    <a href="#" class="text-primary hover:underline font-geist font-bold inline-flex items-center group/link">
+                    <a href={tool.url} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-geist font-bold inline-flex items-center group/link">
                       访问官网 <i data-lucide="external-link" class="w-[18px] h-[18px] ml-1.5 transition-transform group-hover/link:translate-x-1"></i>
                     </a>
                   </div>
@@ -234,7 +275,7 @@ const monthlyHighlight = {
   }
 
   .nav-active {
-    color: #a6311f;
+    color: #1565C0;
     font-weight: 700;
     position: relative;
   }
@@ -247,12 +288,12 @@ const monthlyHighlight = {
     transform: translateY(-50%);
     width: 4px;
     height: 16px;
-    background: #a6311f;
+    background: #1565C0;
     border-radius: 99px;
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, #a6311f 0%, #c84934 100%);
+    background: linear-gradient(135deg, #1565C0 0%, #1976D2 100%);
   }
 
   .bento-grid {
@@ -264,18 +305,18 @@ const monthlyHighlight = {
   .tool-card {
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     background: #ffffff;
-    border: 1px solid #f5ddd9;
+    border: 1px solid #E1EFFB;
     border-radius: 1.5rem;
   }
 
   .tool-card:hover {
     transform: translateY(-8px);
-    border-color: #a6311f;
-    box-shadow: 0 20px 40px -15px rgba(166, 49, 31, 0.1);
+    border-color: #1565C0;
+    box-shadow: 0 20px 40px -15px rgba(21, 101, 192, 0.1);
   }
 
   .ai-glow {
-    box-shadow: 0 0 30px rgba(166, 49, 31, 0.05);
+    box-shadow: 0 0 30px rgba(21, 101, 192, 0.05);
   }
 
   .scroll-mt-32 {

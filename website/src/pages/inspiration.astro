@@ -28,14 +28,14 @@ const stories = [
 ];
 
 const products = [
-  { name: 'Bannerbear', desc: 'Jon Yongfook 开发的自动化图片生成 API，已达到 $600K ARR。', tags: ['#AUTOMATION', '$600K ARR'] },
-  { name: 'Cubox', desc: '中国独立开发者开发的 AI 驱动阅读与知识管理应用。', tags: ['#KNOWLEDGE', 'AI-POWERED'] },
-  { name: '星露谷物语', desc: 'Eric Barone 历时 4.5 年独立开发，销量突破 5000 万份。', tags: ['#GAMEDEV', '$500M+ 营收'] },
-  { name: 'TypingMind', desc: 'Tony Dinh 开发的 AI 聊天界面，单人实现 $45K MRR。', tags: ['#AI-CHAT', '$45K MRR'] },
-  { name: 'Photopea', desc: 'Ivan Kutskir 独立维护 11 年，对标 Photoshop 的免费网页工具。', tags: ['#DESIGN', '百万级日活'] },
-  { name: 'TLDR', desc: 'Dan Ni 将每日技术简报打造成了价值数百万美元的媒体业务。', tags: ['#MEDIA', '数百万美金'] },
-  { name: 'Nomad List', desc: ' Pieter Levels 建立的数字游民社区，行业的事实标准。', tags: ['#COMMUNITY', '#1 Nomad site'] },
-  { name: '小熊猫 C++', desc: '国内开发者单人开发的 IDE 软件，月收 5 万+ 人民币。', tags: ['#DEVTOOLS', '¥5W+/月'] }
+  { name: 'Bannerbear', domain: 'bannerbear.com', desc: 'Jon Yongfook 开发的自动化图片生成 API，已达到 $600K ARR。', tags: ['#AUTOMATION', '$600K ARR'] },
+  { name: 'Cubox', domain: 'cubox.pro', desc: '中国独立开发者开发的 AI 驱动阅读与知识管理应用。', tags: ['#KNOWLEDGE', 'AI-POWERED'] },
+  { name: '星露谷物语', domain: 'stardewvalley.net', desc: 'Eric Barone 历时 4.5 年独立开发，销量突破 5000 万份。', tags: ['#GAMEDEV', '$500M+ 营收'] },
+  { name: 'TypingMind', domain: 'typingmind.com', desc: 'Tony Dinh 开发的 AI 聊天界面，单人实现 $45K MRR。', tags: ['#AI-CHAT', '$45K MRR'] },
+  { name: 'Photopea', domain: 'photopea.com', desc: 'Ivan Kutskir 独立维护 11 年，对标 Photoshop 的免费网页工具。', tags: ['#DESIGN', '百万级日活'] },
+  { name: 'TLDR', domain: 'tldr.tech', desc: 'Dan Ni 将每日技术简报打造成了价值数百万美元的媒体业务。', tags: ['#MEDIA', '数百万美金'] },
+  { name: 'Nomad List', domain: 'nomadlist.com', desc: ' Pieter Levels 建立的数字游民社区，行业的事实标准。', tags: ['#COMMUNITY', '#1 Nomad site'] },
+  { name: '小熊猫 C++', domain: 'github.com', desc: '国内开发者单人开发的 IDE 软件，月收 5 万+ 人民币。', tags: ['#DEVTOOLS', '¥5W+/月'] }
 ];
 
 const talks = [
@@ -196,7 +196,12 @@ const talks = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div class="bg-surface-container-lowest border border-outline-variant p-8 rounded-2xl hover:border-primary transition-all shadow-sm hover:shadow-xl group cursor-pointer">
-            <h4 class="font-bold text-on-surface text-lg mb-4 group-hover:text-primary transition-colors">{product.name}</h4>
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center overflow-hidden border border-outline-variant/30 shrink-0">
+                <img src={`https://www.google.com/s2/favicons?domain=${product.domain}&sz=64`} alt={product.name} class="w-7 h-7" />
+              </div>
+              <h4 class="font-bold text-on-surface text-lg group-hover:text-primary transition-colors">{product.name}</h4>
+            </div>
             <p class="text-sm text-on-surface-variant mb-6 leading-relaxed">{product.desc}</p>
             <div class="flex justify-between items-center text-xs font-bold pt-6 border-t border-outline-variant">
               <span class="text-primary">{product.tags[0]}</span>
@@ -241,18 +246,18 @@ const talks = [
   .glass {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(166, 49, 31, 0.1);
+    border: 1px solid rgba(21, 101, 192, 0.1);
   }
 
   .success-card {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 20px -2px rgba(166, 49, 31, 0.05);
+    box-shadow: 0 4px 20px -2px rgba(21, 101, 192, 0.05);
   }
 
   .success-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px -10px rgba(166, 49, 31, 0.12);
-    border-color: #a6311f;
+    box-shadow: 0 20px 40px -10px rgba(21, 101, 192, 0.12);
+    border-color: #1565C0;
   }
 
   .bento-grid {

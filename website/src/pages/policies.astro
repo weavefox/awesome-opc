@@ -8,6 +8,7 @@ const regions = [
     id: 'china',
     name: '中国',
     enName: 'China',
+    flag: '🇨🇳',
     icon: 'account_balance',
     policies: [
       { title: '《中华人民共和国公司法》2023修订', desc: '2023 年修订版公司法，取消一人有限公司数量限制，允许自然人设立多家一人公司，为连续创业者提供了极大便利。', link: 'https://guangdong.chinatax.gov.cn/gdsw/zjfg/2025-12/31/content_1203d9ef77944845aeca8ce79160292d.shtml' },
@@ -21,6 +22,7 @@ const regions = [
     id: 'usa',
     name: '美国',
     enName: 'USA',
+    flag: '🇺🇸',
     icon: 'public',
     policies: [
       { title: '选择企业结构 - SBA', desc: '美国小企业管理局（SBA）提供的关于独资企业（Sole Proprietorship）、LLC 等结构的官方选择指南。', link: 'https://www.sba.gov/business-guide/launch-your-business/choose-business-structure' },
@@ -32,6 +34,7 @@ const regions = [
     id: 'europe',
     name: '欧洲',
     enName: 'Europe',
+    flag: '🇪🇺',
     icon: 'euro',
     policies: [
       { title: '单一成员有限责任公司指令', desc: 'EUR-Lex 提供的欧盟关于单一成员公司的指令，旨在使个人企业家能够享受有限责任保护，降低跨国经营壁垒。', link: 'https://eur-lex.europa.eu/EN/legal-content/summary/single-member-private-limited-liability-companies.html' },
@@ -42,6 +45,7 @@ const regions = [
     id: 'others',
     name: '其他地区',
     enName: 'Others',
+    flag: '🌏',
     icon: 'language',
     policies: [
       { title: '新加坡 ACRA 结构指南', desc: '新加坡会计与企业管制局（ACRA）关于独资企业、合伙企业及公司结构的官方选择指南。', country: 'SG', link: 'https://www.acra.gov.sg/register/business/choosing-business-structure/' },
@@ -56,10 +60,9 @@ const regions = [
 <BaseLayout title="政策法规 - Awesome OPC">
   <Navbar currentPage="policies" />
 
-  <main class="min-h-screen">
+  <main class="min-h-screen bg-white">
     <!-- Hero Section -->
-    <section class="relative py-24 overflow-hidden bg-primary text-on-primary">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent opacity-40"></div>
+    <section class="py-24 bg-primary text-on-primary">
       <div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-12">
         <div class="max-w-[720px]">
           <span class="inline-block px-3 py-1 bg-on-primary/10 backdrop-blur-sm text-on-primary text-label-sm font-label-sm rounded-full mb-6 border border-on-primary/20">
@@ -76,7 +79,7 @@ const regions = [
     </section>
 
     <!-- Category Filter (Sticky) -->
-    <div class="sticky top-16 bg-surface/80 backdrop-blur-md border-b border-outline-variant z-30">
+    <div class="sticky top-16 bg-white border-b border-outline-variant z-40" style="backdrop-filter: none; transform: translateZ(0);">
       <div class="max-w-[1280px] mx-auto px-4 md:px-12 py-4 flex items-center gap-3 overflow-x-auto">
         {regions.map((region, idx) => (
           <a
@@ -86,7 +89,7 @@ const regions = [
             ]}
             href={`#${region.id}`}
           >
-            {region.name} ({region.enName})
+            {region.flag} {region.name} ({region.enName})
           </a>
         ))}
       </div>
@@ -97,8 +100,8 @@ const regions = [
       {regions.map((region) => (
         <section class="scroll-mt-32" id={region.id}>
           <div class="flex items-center gap-5 mb-12">
-            <div class="h-14 w-14 bg-primary-fixed flex items-center justify-center rounded-2xl">
-              <i data-lucide="{region.icon === 'public' ? 'globe' : region.icon === 'euro' ? 'euro' : region.icon === 'language' ? 'globe' : 'building-2'}" class="w-8 h-8 text-primary"></i>
+            <div class="h-14 w-14 bg-primary-fixed flex items-center justify-center rounded-2xl text-3xl">
+              {region.flag}
             </div>
             <div>
               <h2 class="font-headline-lg text-headline-lg text-on-surface">{region.name}</h2>
@@ -161,10 +164,10 @@ const regions = [
             <i data-lucide="plus" class="w-[22px] h-[22px]"></i>
             提交新政策
           </a>
-          <button class="bg-surface-container-lowest border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-bold text-[15px] hover:bg-surface-bright transition-all flex items-center justify-center gap-2">
+          <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="bg-surface-container-lowest border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-bold text-[15px] hover:bg-surface-bright transition-all flex items-center justify-center gap-2">
             <i data-lucide="message-circle" class="w-[22px] h-[22px]"></i>
             加入社区讨论
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -176,7 +179,7 @@ const regions = [
 <style>
   .policy-card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px -10px rgba(166, 49, 31, 0.1);
+    box-shadow: 0 12px 24px -10px rgba(21, 101, 192, 0.1);
   }
 
   .scroll-mt-32 {
@@ -208,33 +211,6 @@ const regions = [
           top: offsetPosition,
           behavior: 'smooth'
         });
-      }
-    });
-  });
-
-  // Toggle active state on scroll for category filter
-  window.addEventListener('scroll', () => {
-    const sections = ['china', 'usa', 'europe', 'others'];
-    let current = '';
-
-    sections.forEach(section => {
-      const element = document.getElementById(section);
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= 160) {
-          current = section;
-        }
-      }
-    });
-
-    document.querySelectorAll('.sticky a').forEach(a => {
-      const href = a.getAttribute('href')?.substring(1);
-      if (href === current) {
-        a.classList.remove('bg-surface-container-low', 'text-on-surface');
-        a.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
-      } else {
-        a.classList.add('bg-surface-container-low', 'text-on-surface');
-        a.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
       }
     });
   });
