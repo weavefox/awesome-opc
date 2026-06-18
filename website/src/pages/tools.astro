@@ -1,0 +1,381 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+// 工具数据 - 包含 favicon
+const toolCategories = [
+  {
+    id: 'building',
+    name: '开发与构建',
+    icon: 'architecture',
+    count: 12,
+    tools: [
+      { name: 'Cursor', domain: 'cursor.sh', desc: 'AI 优先的代码编辑器。它不仅是自动补全，更能够深刻理解你的整个代码库，预测并协助你完成下一步操作。', category: '代码工具', url: 'https://cursor.sh/' },
+      { name: 'Claude Code', domain: 'github.com', desc: 'Anthropic 的终端 AI 工程师。复杂重构、架构决策和调试。', category: '代码工具', url: 'https://claude.com/claude-code' },
+      { name: 'GitHub Copilot', domain: 'github.com', desc: '集成于所有主流编辑器的内联代码补全。世界最广泛采用的 AI 编码工具。', category: '代码工具', url: 'https://github.com/features/copilot' },
+      { name: 'Windsurf', domain: 'codeium.com', desc: 'AI 优先的 IDE，配备复杂多文件编辑的 Agent 流程。', category: '代码工具', url: 'https://codeium.com/windsurf' },
+      { name: 'Supabase', domain: 'supabase.com', desc: '开源的 Firebase 替代品，一人公司的后端首选。集成了 Postgres 数据库、鉴权系统、对象存储和 Edge Functions。', category: '后端服务', url: 'https://supabase.com/' },
+      { name: 'Vercel', domain: 'vercel.com', desc: '零配置部署平台。前端和全栈应用的 Git push → 生产。', category: '托管平台', url: 'https://vercel.com/' },
+      { name: 'Railway', domain: 'railway.app', desc: '几秒内部署后端、数据库和定时任务。极棒的开发者体验。', category: '托管平台', url: 'https://railway.app/' },
+      { name: 'Bolt.new', domain: 'bolt.new', desc: '仅凭一段提示词即可生成全栈应用。包含前端、后端、数据库及自动托管，体验极致的构建速度。', category: '快速开发', url: 'https://bolt.new/' },
+      { name: 'Lovable', domain: 'lovable.dev', desc: '最友好的初学者全栈 AI 应用构建器。从自然语言生成干净的 React + Supabase 应用。', category: '快速开发', url: 'https://lovable.dev/' },
+      { name: 'v0', domain: 'v0.dev', desc: 'Vercel 的 AI UI 组件生成器。生成生产级 React/Next.js 代码。', category: 'UI 组件', url: 'https://v0.dev/' },
+      { name: 'PlanetScale', domain: 'planetscale.com', desc: 'Serverless MySQL 平台，支持分支、水平扩展和即时架构变更。', category: '数据库', url: 'https://planetscale.com/' },
+      { name: 'Turso', domain: 'turso.tech', desc: 'Edge 托管的 SQLite 数据库。优秀的开发者体验和复制选项。', category: '数据库', url: 'https://turso.tech/' }
+    ]
+  },
+  {
+    id: 'design',
+    name: '设计与 UI',
+    icon: 'palette',
+    count: 8,
+    tools: [
+      { name: 'Figma', domain: 'figma.com', desc: '行业标准的协作设计工具，配备强大的 AI 功能。', category: '设计工具', url: 'https://www.figma.com/' },
+      { name: 'Framer', domain: 'framer.com', desc: '无需任何代码即可通过视觉化手段构建惊艳的网站。最适合需要顶级审美的一人公司展示站点。', category: '无代码建站', url: 'https://www.framer.com/' },
+      { name: 'Midjourney', domain: 'midjourney.com', desc: '行业领先的 AI 图像生成。产品模型、市场视觉、插图和品牌图像的顶级美学质量。', category: 'AI 图像', url: 'https://www.midjourney.com/' },
+      { name: 'Canva', domain: 'canva.com', desc: '为非设计师打造的多合一设计工具。AI 辅助的营销图形、社交帖子、演示文稿、视频和文档。', category: '设计工具', url: 'https://www.canva.com/' },
+      { name: 'Adobe Firefly', domain: 'firefly.adobe.com', desc: 'Adobe 生态系统内的专业图像编辑和生成。商业安全的 AI 图像。', category: 'AI 图像', url: 'https://firefly.adobe.com/' },
+      { name: 'Lovart', domain: 'lovart.ai', desc: '全球首个 AI 设计智能体。协作画布专为品牌和营销设计。', category: 'AI 设计', featured: true, url: 'https://www.lovart.ai/' },
+      { name: 'Google Stitch', domain: 'stitch.withgoogle.com', desc: 'Google 的 AI UI 设计工具，从文本或图像提示生成移动和网页 UI。', category: 'AI 设计', url: 'https://stitch.withgoogle.com/' },
+      { name: 'Shadcn/ui', domain: 'ui.shadcn.com', desc: '基于 Radix UI 和 Tailwind CSS 的精美组件库。为开发者提供极致灵活且极简的 UI 构建基石。', category: 'UI 组件库', url: 'https://ui.shadcn.com/' }
+    ]
+  },
+  {
+    id: 'marketing',
+    name: '营销与增长',
+    icon: 'trending_up',
+    count: 8,
+    tools: [
+      { name: 'Beehiiv', domain: 'beehiiv.com', desc: '为增长而构建的通讯平台。0% 收入分成，内置推荐系统、广告网络和 AI 网站构建器。', category: '通讯', url: 'https://www.beehiiv.com/' },
+      { name: 'X (Twitter)', domain: 'x.com', desc: '单人创始人在公共平台上建立和增长受众的首选平台。', category: '社交媒体', url: 'https://x.com/' },
+      { name: 'Buffer', domain: 'buffer.com', desc: '社交媒体排程和分析，带 AI 标题建议。一个仪表板管理所有平台。', category: '社交媒体', url: 'https://buffer.com/' },
+      { name: 'Plausible', domain: 'plausible.io', desc: '注重隐私、轻量级的网页分析。不需要 Cookie 横幅。', category: '数据分析', url: 'https://plausible.io/' },
+      { name: 'PostHog', domain: 'posthog.com', desc: '全功能产品分析。会话录制、功能标志、A/B 测试和自托管选项。', category: '数据分析', url: 'https://posthog.com/' },
+      { name: 'Umami', domain: 'umami.is', desc: '开源网页分析。简单、注重隐私、可自托管免费使用。', category: '数据分析', url: 'https://umami.is/' }
+    ]
+  },
+  {
+    id: 'finance',
+    name: '财务与会计',
+    icon: 'payments',
+    count: 8,
+    tools: [
+      { name: 'Stripe', domain: 'stripe.com', desc: '全球支付基建的标准。提供从结账、订阅到发票的一站式解决方案。', category: '支付网关', featured: true, url: 'https://stripe.com/' },
+      { name: 'Lemon Squeezy', domain: 'lemonsqueezy.com', desc: '数字产品的记录商（MoR）。代扣全球税收，让你无忧开展跨境业务。', category: '支付网关', url: 'https://www.lemonsqueezy.com/' },
+      { name: 'Paddle', domain: 'paddle.com', desc: '专注于 EU 合规的记录商。处理 VAT、税收和全球计费。', category: '支付网关', url: 'https://paddle.com/' },
+      { name: '支付宝', domain: 'b.alipay.com', desc: '阿里巴巴的支付平台。0.6% 费率，服务中国客户必备。', category: '支付网关', url: 'https://b.alipay.com/' },
+      { name: '微信支付', domain: 'pay.weixin.qq.com', desc: '中国主要的移动支付。0.6% 费率，中国市场必备。', category: '支付网关', url: 'https://pay.weixin.qq.com/' },
+      { name: 'Mercury', domain: 'mercury.com', desc: '专为创业者设计的数字银行。无账户费，完美支持企业信用卡自动化流。', category: '银行服务', url: 'https://mercury.com/' },
+      { name: 'Fondo', domain: 'fondo.com', desc: 'AI 驱动的记账服务。自动分类税务申报，甚至能协助申请研发税收抵免。', category: '会计工具', url: 'https://www.fondo.com/' },
+      { name: 'QuickBooks', domain: 'quickbooks.intuit.com', desc: '自动分类费用、追踪里程、捕获收据、估算季度税款。', category: '会计工具', url: 'https://quickbooks.intuit.com/solopreneur/' }
+    ]
+  },
+  {
+    id: 'ai',
+    name: '人工智能',
+    icon: 'smart_toy',
+    count: 15,
+    featured: true,
+    tools: [
+      { name: 'Claude', domain: 'anthropic.com', desc: '业界公认具备顶尖推理能力和超长上下文窗口。无论是代码重构、行业分析还是复杂逻辑推理，Claude 都是你一人公司最称职的虚拟 CTO。', category: 'AI 助手', premium: true, url: 'https://claude.com/' },
+      { name: 'Perplexity', domain: 'perplexity.ai', desc: '实时联网的 AI 搜索引擎。提供详尽的引用溯源，是进行市场研究和竞品分析的高效神器。', category: 'AI 搜索', url: 'https://www.perplexity.ai/' },
+      { name: 'Kimi', domain: 'kimi.moonshot.cn', desc: '国产 AI 中的长文本王者。极度适合阅读并总结超大体量的中文专业文档与研报。', category: '长文本处理', url: 'https://kimi.moonshot.cn/' },
+      { name: 'ChatGPT', domain: 'openai.com', desc: 'OpenAI 的 AI 聊天助手，推动了生成式 AI 革命的里程碑产品。', category: 'AI 聊天', url: 'https://chat.openai.com/' },
+      { name: 'Gemini', domain: 'gemini.google.com', desc: 'Google 的多模态 AI 模型，擅长跨模态理解和生成。', category: 'AI 助手', url: 'https://gemini.google.com/' },
+      { name: 'DeepSeek', domain: 'deepseek.com', desc: '中国 AI 公司开发的高性能大模型，开源版本性能优秀。', category: 'AI 模型', url: 'https://www.deepseek.com/' }
+    ]
+  },
+  {
+    id: 'productivity',
+    name: '效率与运营',
+    icon: 'task_alt',
+    count: 10,
+    tools: [
+      { name: 'Notion', domain: 'notion.so', desc: 'All-in-one workspace for notes, docs, and project management. Perfect for organizing your OPC business.', category: '笔记与文档', url: 'https://www.notion.so/' },
+      { name: 'Linear', domain: 'linear.app', desc: 'Issue tracking for high-performance teams. Streamline your development workflow.', category: '项目管理', url: 'https://linear.app/' },
+      { name: 'Zapier', domain: 'zapier.com', desc: 'Connect your apps and automate workflows. No coding required.', category: '自动化', url: 'https://zapier.com/' },
+      { name: 'WeaveFox', domain: 'weavefox.cn', desc: '免费 AIGC 平台，文本提示一键生成全栈应用并部署。', category: '快速开发', url: 'https://www.weavefox.cn/' }
+    ]
+  },
+  {
+    id: 'media',
+    name: '视频与音频',
+    icon: 'movie',
+    count: 8,
+    tools: [
+      { name: 'Descript', domain: 'descript.com', desc: 'All-in-one audio/video editor. Edit videos like editing docs.', category: '视频编辑', url: 'https://www.descript.com/' },
+      { name: 'ElevenLabs', domain: 'elevenlabs.io', desc: 'AI voice generator with lifelike speech synthesis.', category: 'AI 语音', url: 'https://elevenlabs.io/' },
+      { name: 'CapCut', domain: 'capcut.com', desc: 'Powerful video editor with AI features. Free and cross-platform.', category: '视频剪辑', url: 'https://www.capcut.com/' }
+    ]
+  }
+];
+
+const monthlyHighlight = {
+  title: 'Alipay AI Pay',
+  desc: '蚂蚁集团推出的 AI 原生支付解决方案。让智能体（AI Agent）也能像人类一样无缝处理全球交易，探索 Agentic Workflow 的商业闭环。',
+  stats: [
+    { value: '1亿+', label: '活跃用户' },
+    { value: '0.6%', label: '标准费率' }
+  ],
+  image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBm0w-X1_xSLzyM2ubH4OSDJF12huIJ62ik7lRXtUCwzs1aPRWM0wpKy2xlYEdHShcXwbfVHqtmJEgrDHdGBaJRCNDINyENuz6bV9bocpGDyi6nK9H_Io2V1TC4Az5UPme62prwb6FluHZbM0Wn2zfHb3qqPNdhbgc677tGOlR5ygEruKjaSwR9Bs07pTl1lfawjsLLzosu4oTFty8pMDSghK1fJvvwrdnIAjuowz2d6z_ddVEcUM3nGcJmZ4fBn4PsXm6yu8Ppae6V'
+};
+---
+
+<BaseLayout title="工具目录 - Awesome OPC">
+  <Navbar currentPage="tools" />
+
+  <main class="pt-32 pb-24 px-4 md:px-8 max-w-[1400px] mx-auto">
+    <div class="flex flex-col lg:flex-row gap-16">
+      <!-- Sidebar Navigation -->
+      <aside class="hidden lg:block w-56 shrink-0">
+        <div class="sticky top-32">
+          <p class="font-geist text-[12px] font-bold text-on-surface-variant/40 mb-8 px-2 uppercase tracking-[0.2em]">分类检索</p>
+          <div class="h-px bg-outline-variant/30 mb-8"></div>
+          <ul class="space-y-6">
+            {toolCategories.map((cat, idx) => (
+              <li>
+                <a
+                  class={`flex items-center gap-4 group transition-all ${idx === 0 ? 'nav-active text-primary' : 'text-on-surface-variant hover:text-primary'}`}
+                  href={`#${cat.id}`}
+                >
+                  <i data-lucide={cat.icon === 'architecture' ? 'layout-grid' : cat.icon === 'palette' ? 'palette' : cat.icon === 'payments' ? 'credit-card' : cat.icon === 'smart_toy' ? 'bot' : cat.icon === 'task_alt' ? 'check-circle' : cat.icon === 'movie' ? 'video' : cat.icon === 'trending_up' ? 'trending-up' : 'wrench'} class="w-[22px] h-[22px]"></i>
+                  <span class={`font-geist ${idx === 0 ? 'font-semibold' : 'font-medium'}`}>{cat.name}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 space-y-24">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden hero-gradient rounded-[2.5rem] p-8 md:p-16 text-on-primary">
+          <div class="absolute -top-32 -right-32 w-[600px] h-[600px] bg-white/10 rounded-full blur-[120px]"></div>
+          <div class="relative z-10 max-w-2xl">
+            <h1 class="font-headline-xl text-[32px] md:text-headline-xl mb-6 leading-tight">
+              一人公司的<br />
+              <span class="text-white">终极生产力工具箱</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-lg leading-relaxed">
+              我们精选了 100+ 个旨在提升单人作战效率的顶级工具，帮助你从创意原型到财务管理，实现从 0 到 1 的飞跃。
+            </p>
+            <div class="flex flex-col sm:flex-row flex-wrap gap-5">
+              <button class="bg-white text-primary px-8 md:px-10 py-4 rounded-full font-geist font-bold shadow-2xl shadow-black/10 hover:scale-105 active:scale-95 transition-all">
+                立即探索
+              </button>
+              <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-8 md:px-10 py-4 rounded-full font-geist font-bold transition-all">
+                提交新资源
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tool Categories -->
+        {toolCategories.map((cat) => (
+          <section class="scroll-mt-32" id={cat.id}>
+            <div class="flex items-end justify-between mb-12 border-b border-outline-variant/30 pb-6">
+              <div class="flex items-center gap-5">
+                <div class={`w-12 h-12 rounded-2xl flex items-center justify-center ${cat.featured ? 'bg-primary text-white' : 'bg-primary/10 text-primary'}`}>
+                  <i data-lucide={cat.icon === 'architecture' ? 'layout-grid' : cat.icon === 'palette' ? 'palette' : cat.icon === 'payments' ? 'credit-card' : cat.icon === 'smart_toy' ? 'bot' : cat.icon === 'task_alt' ? 'check-circle' : cat.icon === 'movie' ? 'video' : cat.icon === 'trending_up' ? 'trending-up' : 'wrench'} class="w-7 h-7"></i>
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">{cat.name}</h2>
+              </div>
+              <span class={`font-geist text-sm font-bold px-4 py-1.5 rounded-full ${cat.featured ? 'bg-primary text-white' : 'text-on-surface-variant/50 bg-surface-container-low'}`}>
+                {cat.count} 个资源
+              </span>
+            </div>
+            <div class="bento-grid">
+              {cat.tools.map((tool) => (
+                <div class={`tool-card group p-8 flex flex-col justify-between ${tool.premium ? 'border-2 border-primary/10 ai-glow bg-primary/[0.01]' : 'bg-surface-container-low border-2 border-transparent hover:border-primary/20 hover:bg-white'}`}>
+                  <div>
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 overflow-hidden border border-outline-variant/20 group-hover:border-primary/30 transition-all duration-500">
+                      <img
+                        src={`https://www.google.com/s2/favicons?domain=${tool.domain}&sz=64`}
+                        alt={tool.name}
+                        class="w-10 h-10"
+                      />
+                    </div>
+                    <div class="flex items-center gap-3 mb-3">
+                      <h3 class="font-geist text-2xl font-bold text-on-surface">{tool.name}</h3>
+                      {tool.premium && (
+                        <span class="bg-primary text-white text-[10px] px-2 py-0.5 rounded uppercase font-black tracking-tighter">Premium Choice</span>
+                      )}
+                    </div>
+                    <p class="font-body-md text-on-surface-variant leading-relaxed mb-8">{tool.desc}</p>
+                  </div>
+                  <div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+                    <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/40">{tool.category}</span>
+                    <a href={tool.url} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-geist font-bold inline-flex items-center group/link">
+                      访问官网 <i data-lucide="external-link" class="w-[18px] h-[18px] ml-1.5 transition-transform group-hover/link:translate-x-1"></i>
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        <!-- Monthly Highlight Section -->
+        <section class="py-16 bg-primary rounded-[3rem] p-16 overflow-hidden relative shadow-2xl shadow-primary/20">
+          <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+              <path d="M0 80 Q 25 10 50 80 T 100 80" fill="none" stroke="white" stroke-width="0.3"></path>
+            </svg>
+          </div>
+          <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <span class="inline-block bg-white/10 backdrop-blur-md px-5 py-1.5 rounded-full text-xs font-geist font-bold mb-8 border border-white/10 uppercase tracking-widest text-white">月度推荐专题</span>
+              <h2 class="font-headline-xl text-headline-xl mb-8 leading-tight text-white">{monthlyHighlight.title}</h2>
+              <p class="font-body-lg text-body-lg text-white/80 mb-10 max-w-md">{monthlyHighlight.desc}</p>
+              <div class="flex items-center gap-16">
+                {monthlyHighlight.stats.map(stat => (
+                  <div class="flex flex-col">
+                    <span class="text-3xl font-geist font-black text-white">{stat.value}</span>
+                    <span class="text-xs font-geist font-bold text-white/50 uppercase tracking-wider mt-1">{stat.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div class="relative group">
+              <div class="aspect-[4/3] bg-white/5 backdrop-blur-xl rounded-[2rem] border border-white/10 shadow-3xl flex items-center justify-center overflow-hidden transform group-hover:scale-[1.02] transition-all duration-700">
+                <img alt={`${monthlyHighlight.title} Dashboard`} class="w-full h-full object-cover" src={monthlyHighlight.image} />
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="bg-surface-container rounded-[2.5rem] p-16 flex flex-col lg:flex-row items-center gap-16 shadow-inner border border-outline-variant/30">
+          <div class="flex-1">
+            <h4 class="font-geist text-3xl font-black mb-4">掌握一人公司的效率密码</h4>
+            <p class="font-body-lg text-on-surface-variant leading-relaxed">每周五准时投递：3 个精选黑科技工具 + 1 个真实的单人创业实战案例。</p>
+          </div>
+          <div class="w-full lg:w-auto flex flex-col sm:flex-row gap-4">
+            <input class="bg-white border border-outline-variant/50 rounded-full px-8 py-4 w-full sm:w-80 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-on-surface-variant/40" placeholder="你的电子邮箱地址" type="email" />
+            <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-geist font-bold hover:brightness-110 shadow-xl shadow-primary/10 whitespace-nowrap transition-all">
+              开启订阅
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .sticky {
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 100px);
+  }
+
+  .nav-active {
+    color: #1565C0;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .nav-active::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 16px;
+    background: #1565C0;
+    border-radius: 99px;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #1565C0 0%, #1976D2 100%);
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 32px;
+  }
+
+  .tool-card {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background: #ffffff;
+    border: 1px solid #E1EFFB;
+    border-radius: 1.5rem;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-8px);
+    border-color: #1565C0;
+    box-shadow: 0 20px 40px -15px rgba(21, 101, 192, 0.1);
+  }
+
+  .ai-glow {
+    box-shadow: 0 0 30px rgba(21, 101, 192, 0.05);
+  }
+
+  .scroll-mt-32 {
+    scroll-margin-top: 8rem;
+  }
+</style>
+
+<script>
+  // Smooth scroll for anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href')?.replace('#', '');
+      const target = document.getElementById(targetId || '');
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 120,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Scroll spy for sidebar
+  const observerOptions = {
+    root: null,
+    rootMargin: '-30% 0px -60% 0px',
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        document.querySelectorAll('aside a').forEach(link => {
+          const href = link.getAttribute('href')?.replace('#', '');
+          if (href === id) {
+            link.classList.add('nav-active', 'text-primary');
+            link.classList.remove('text-on-surface-variant');
+            const span = link.querySelector('span:last-child');
+            if (span) {
+              span.classList.add('font-semibold');
+              span.classList.remove('font-medium');
+            }
+          } else {
+            link.classList.remove('nav-active', 'text-primary');
+            link.classList.add('text-on-surface-variant');
+            const span = link.querySelector('span:last-child');
+            if (span) {
+              span.classList.remove('font-semibold');
+              span.classList.add('font-medium');
+            }
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section);
+  });
+</script>

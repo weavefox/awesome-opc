@@ -1,0 +1,123 @@
+---
+interface Props {
+  currentPage?: 'home' | 'policies' | 'inspiration' | 'tools';
+}
+
+const { currentPage = 'home' } = Astro.props;
+
+const navLinks = [
+  { href: '/', label: '首页', key: 'home' },
+  { href: '/policies.html', label: '政策', key: 'policies' },
+  { href: '/inspiration.html', label: '灵感', key: 'inspiration' },
+  { href: '/tools.html', label: '工具库', key: 'tools' }
+];
+---
+
+<nav class="bg-white border-b border-outline-variant sticky top-0 z-50" id="navbar">
+  <div class="flex justify-between items-center w-full px-4 md:px-margin-desktop max-w-max-width mx-auto h-16">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/logo.svg" alt="One Person Company" class="w-9 h-9" />
+      <span class="text-primary text-[20px] tracking-wide" style="font: var(--font-display); font-weight: 600;">One Person Company</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center space-x-10">
+      {navLinks.map(link => (
+        <a
+          class:list={[
+            'font-label-md text-label-md transition-all duration-200',
+            currentPage === link.key
+              ? 'text-primary font-bold relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-primary'
+              : 'text-on-surface-variant hover:text-primary'
+          ]}
+          href={link.href}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <div class="hidden lg:block relative">
+        <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]"></i>
+        <input
+          class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full text-label-md focus:ring-2 focus:ring-primary/20 w-64 transition-all focus:bg-white"
+          placeholder="搜索资源..."
+          type="text"
+        />
+      </div>
+
+      <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="bg-primary text-on-primary px-5 py-2 rounded-full font-label-md text-label-md hover:shadow-layered transition-all active:scale-95">
+        Contribute
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors" aria-label="Toggle menu">
+        <i data-lucide="menu" class="text-[24px]"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant">
+    <div class="px-4 py-4 space-y-3">
+      {navLinks.map(link => (
+        <a
+          class:list={[
+            'block py-3 px-4 rounded-lg font-medium transition-all duration-200',
+            currentPage === link.key
+              ? 'bg-primary/10 text-primary font-bold'
+              : 'text-on-surface-variant hover:bg-surface-container hover:text-primary'
+          ]}
+          href={link.href}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="block text-center bg-primary text-on-primary px-6 py-3 rounded-full font-bold mt-4">
+        Contribute
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .sticky {
+    position: sticky;
+  }
+</style>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  menuBtn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+    const icon = menuBtn.querySelector('span');
+    if (icon) {
+      icon.textContent = menu?.classList.contains('hidden') ? 'menu' : 'close';
+    }
+  });
+
+  // Close menu when clicking a link
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      const icon = menuBtn?.querySelector('span');
+      if (icon) icon.textContent = 'menu';
+    });
+  });
+
+  // Scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 20) {
+      nav?.classList.add('shadow-layered', 'bg-white/95');
+      nav?.classList.remove('bg-surface-container-lowest/80');
+    } else {
+      nav?.classList.remove('shadow-layered', 'bg-white/95');
+      nav?.classList.add('bg-surface-container-lowest/80');
+    }
+  });
+</script>

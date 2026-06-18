@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const regions = [
+  {
+    id: 'china',
+    name: '中国',
+    enName: 'China',
+    flag: '🇨🇳',
+    icon: 'account_balance',
+    policies: [
+      { title: '《中华人民共和国公司法》2023修订', desc: '2023 年修订版公司法，取消一人有限公司数量限制，允许自然人设立多家一人公司，为连续创业者提供了极大便利。', link: 'https://guangdong.chinatax.gov.cn/gdsw/zjfg/2025-12/31/content_1203d9ef77944845aeca8ce79160292d.shtml' },
+      { title: '新《公司法》权威解读', desc: '上海市人民政府对新《公司法》关于一人有限公司、出资期限及法律责任等关键条款的权威官方解读。', link: 'https://www.shanghai.gov.cn/xbhygq/20240702/fc72a6538b8642e5b2e204ccd291f8ed.html' },
+      { title: '杭州市个转企政策意见', desc: '杭州市关于个体工商户培育帮扶及支持"个转企"的实施意见，重点优化了转型升级的流程与税收优惠。', link: 'https://zfgb.hangzhou.gov.cn/15/101220263/t106220263014/530157.shtml' },
+      { title: '深圳市高质量发展措施', desc: '深圳市市场监督管理局发布的扶持措施，包括创业担保贷款、减费让利及行政许可简化等系列利好政策。', link: 'https://amr.sz.gov.cn/xxgk/qt/ztlm/jyztdjzc/flfgjzcjd/content/post_12616867.html' },
+      { title: '安徽省促进个体工商户发展', desc: '安徽省（含合肥）促进个体工商户发展的政策措施及解读，为长三角地区的个人创业者提供政策支撑。', link: 'https://www.ah.gov.cn/content/article/564252431' }
+    ]
+  },
+  {
+    id: 'usa',
+    name: '美国',
+    enName: 'USA',
+    flag: '🇺🇸',
+    icon: 'public',
+    policies: [
+      { title: '选择企业结构 - SBA', desc: '美国小企业管理局（SBA）提供的关于独资企业（Sole Proprietorship）、LLC 等结构的官方选择指南。', link: 'https://www.sba.gov/business-guide/launch-your-business/choose-business-structure' },
+      { title: '注册您的业务 - SBA', desc: '向州政府和地方政府注册业务的分步指南，确保合规开展商业活动。', link: 'https://www.sba.gov/business-guide/launch-your-business/register-your-business' },
+      { title: '开始业务 - IRS', desc: '美国国税局（IRS）提供的针对独资企业或 LLC 的联邦税收信息 and 申报要求。', link: 'https://www.irs.gov/businesses/small-businesses-self-employed/starting-a-business' }
+    ]
+  },
+  {
+    id: 'europe',
+    name: '欧洲',
+    enName: 'Europe',
+    flag: '🇪🇺',
+    icon: 'euro',
+    policies: [
+      { title: '单一成员有限责任公司指令', desc: 'EUR-Lex 提供的欧盟关于单一成员公司的指令，旨在使个人企业家能够享受有限责任保护，降低跨国经营壁垒。', link: 'https://eur-lex.europa.eu/EN/legal-content/summary/single-member-private-limited-liability-companies.html' },
+      { title: '欧盟公司法与公司治理', desc: '欧盟委员会制定的统一公司法律框架，为在欧盟单一市场内进行商业活动的 OPC 提供了法律确定性。', link: 'https://commission.europa.eu/topics/business-and-industry/doing-business-eu/company-law-and-corporate-governance_en' }
+    ]
+  },
+  {
+    id: 'others',
+    name: '其他地区',
+    enName: 'Others',
+    flag: '🌏',
+    icon: 'language',
+    policies: [
+      { title: '新加坡 ACRA 结构指南', desc: '新加坡会计与企业管制局（ACRA）关于独资企业、合伙企业及公司结构的官方选择指南。', country: 'SG', link: 'https://www.acra.gov.sg/register/business/choosing-business-structure/' },
+      { title: '一人会社の設立登記 - 法務省', desc: '日本法务省关于一人公司在线登记的指南，详细说明了成立流程及所需材料。', country: 'JP', link: 'https://www.moj.go.jp/MINJI/minji06_00117.html' },
+      { title: '印度 2013 公司法 - OPC', desc: '关于印度 OPC 形式的法律背景研究，探讨了从"最少两人"到"单一成员"公司形式的法律演变。', country: 'IN', link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3157951' },
+      { title: '印尼 MSEs 单人 LLC 治理', desc: '研究印尼针对微型和小型企业（MSEs）的一人有限责任公司治理问题，探讨法律实体的合规性。', country: 'ID', link: 'https://ejournal.undip.ac.id/index.php/dlr/article/view/44378/0' }
+    ]
+  }
+];
+---
+
+<BaseLayout title="政策法规 - Awesome OPC">
+  <Navbar currentPage="policies" />
+
+  <main class="min-h-screen bg-white">
+    <!-- Hero Section -->
+    <section class="py-24 bg-primary text-on-primary">
+      <div class="relative z-10 max-w-[1280px] mx-auto px-4 md:px-12">
+        <div class="max-w-[720px]">
+          <span class="inline-block px-3 py-1 bg-on-primary/10 backdrop-blur-sm text-on-primary text-label-sm font-label-sm rounded-full mb-6 border border-on-primary/20">
+            一人公司全球指南
+          </span>
+          <h1 class="font-headline-xl text-headline-xl mb-6 tracking-tight">
+            🏛 全球政策与法规框架
+          </h1>
+          <p class="text-body-lg font-body-lg text-primary-fixed/80 leading-relaxed">
+            深入了解不同国家和地区针对一人有限公司（OPC）的法律、税务及注册政策。为你的全球化业务布局提供权威的决策参考。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Filter (Sticky) -->
+    <div class="sticky top-16 bg-white border-b border-outline-variant z-40" style="backdrop-filter: none; transform: translateZ(0);">
+      <div class="max-w-[1280px] mx-auto px-4 md:px-12 py-4 flex items-center gap-3 overflow-x-auto">
+        {regions.map((region, idx) => (
+          <a
+            class:list={[
+              'whitespace-nowrap px-6 py-2 rounded-full text-[14px] font-medium transition-all',
+              idx === 0 ? 'bg-primary text-on-primary shadow-sm' : 'bg-surface-container-low hover:bg-surface-container text-on-surface'
+            ]}
+            href={`#${region.id}`}
+          >
+            {region.flag} {region.name} ({region.enName})
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Policies Content -->
+    <div class="max-w-[1280px] mx-auto px-4 md:px-12 py-20 space-y-24">
+      {regions.map((region) => (
+        <section class="scroll-mt-32" id={region.id}>
+          <div class="flex items-center gap-5 mb-12">
+            <div class="h-14 w-14 bg-primary-fixed flex items-center justify-center rounded-2xl text-3xl">
+              {region.flag}
+            </div>
+            <div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">{region.name}</h2>
+              <p class="text-on-surface-variant text-body-md">
+                {region.id === 'china' && '包含新公司法修订及地方性扶持政策'}
+                {region.id === 'usa' && 'SBA 与 IRS 的权威注册及税务指南'}
+                {region.id === 'europe' && '欧盟单一成员有限责任公司指令及公司治理'}
+                {region.id === 'others' && '新加坡、印度、日本、印度尼西亚'}
+              </p>
+            </div>
+          </div>
+
+          <div class:list={[
+            'grid gap-6',
+            region.id === 'china' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' :
+            region.id === 'usa' ? 'grid-cols-1 md:grid-cols-3' :
+            region.id === 'europe' ? 'grid-cols-1 md:grid-cols-2' :
+            'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          ]}>
+            {region.policies.map((policy) => (
+              <div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant policy-card-hover flex flex-col transition-all duration-300 group">
+                {policy.country && (
+                  <div class="flex items-center gap-3 mb-5">
+                    <span class="px-2 py-0.5 bg-primary-fixed text-on-primary-fixed-variant text-[12px] font-bold rounded-lg uppercase tracking-wider">
+                      {policy.country}
+                    </span>
+                  </div>
+                )}
+                <h3 class="font-headline-md text-[22px] font-semibold text-on-surface mb-4 group-hover:text-primary transition-colors">
+                  {policy.title}
+                </h3>
+                <p class="text-on-surface-variant text-body-md mb-8 flex-grow leading-relaxed">
+                  {policy.desc}
+                </p>
+                <a
+                  class="flex items-center gap-2 text-primary font-semibold text-[14px] hover:gap-3 transition-all"
+                  href={policy.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {region.id === 'china' ? '查看官方来源' : 'View Official Source'}
+                  <i data-lucide="external-link" class="w-[18px] h-[18px]"></i>
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-surface-container py-24">
+      <div class="max-w-[1280px] mx-auto px-4 md:px-12 text-center">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">未找到您所在地区的政策？</h2>
+        <p class="text-on-surface-variant text-body-lg mb-12 max-w-[640px] mx-auto leading-relaxed">
+          我们正在不断完善全球 OPC 政策库。如果您有相关的权威政策链接，欢迎通过 GitHub 或社区讨论与我们分享。
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-[15px] hover:opacity-95 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/20">
+            <i data-lucide="plus" class="w-[22px] h-[22px]"></i>
+            提交新政策
+          </a>
+          <a href="https://github.com/weavefox/awesome-opc" target="_blank" class="bg-surface-container-lowest border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-bold text-[15px] hover:bg-surface-bright transition-all flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-[22px] h-[22px]"></i>
+            加入社区讨论
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .policy-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -10px rgba(21, 101, 192, 0.1);
+  }
+
+  .scroll-mt-32 {
+    scroll-margin-top: 8rem;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<script>
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href') || '');
+      if (target) {
+        const headerOffset = 130;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
