@@ -254,6 +254,8 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=manus.im&sz=16" width="16" height="16" /> [Manus](https://manus.im/) — Autonomous AI agent for multi-step tasks. Plans, researches, codes, and deploys apps in a sandbox. Best for deep analysis and complex workflows.
 - <img src="https://www.google.com/s2/favicons?domain=genspark.ai&sz=16" width="16" height="16" /> [Genspark](https://www.genspark.ai/) — Super agent with Mixture-of-Agents architecture. Handles presentations, documents, video creation, and even simulated phone calls. Fastest general agent.
 - <img src="https://www.google.com/s2/favicons?domain=replit.com&sz=16" width="16" height="16" /> [Replit Agent](https://replit.com/agent) — Full-stack AI agent that builds, deploys, and hosts apps. Built-in database, auth, 30+ integrations (Stripe, Figma, Notion). MVP in minutes.
+- <img src="https://www.google.com/s2/favicons?domain=opc.dev&sz=16" width="16" height="16" /> [OPC Skills](https://opc.dev) — AI Agent skills collection that extends Claude Code, Cursor, and other AI coding assistants with social media search (Reddit/X), SEO/GEO optimization, domain research, and Logo/Banner generation. Install with `npx skills add ReScienceLab/opc-skills`.
+- <img src="https://www.google.com/s2/favicons?domain=integrations.sh&sz=16" width="16" height="16" /> [integrations.sh](https://integrations.sh) — Service integration registry for the AI era. 5,758+ integration specs (MCP, OpenAPI, GraphQL, CLI) enabling AI agents to directly invoke services like Stripe, Figma, Notion, and Linear.
 
 ### Video & Audio
 
