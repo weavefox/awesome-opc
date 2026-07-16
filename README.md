@@ -110,6 +110,7 @@ To keep this list useful and trustworthy:
 - [杭州市加大个体工商户培育帮扶力度支持转型升级实施意见 — 杭州市人民政府](https://zfgb.hangzhou.gov.cn/15/101220263/t106220263014/530157.shtml) — 杭州市关于个体工商户培育帮扶及支持"个转企"的政策措施。
 - [深圳市扶持个体工商户高质量发展若干措施 — 深圳市市场监督管理局](https://amr.sz.gov.cn/xxgk/qt/ztlm/jyztdjzc/flfgjzcjd/content/post_12616867.html) — 深圳市创业担保贷款、减费让利等扶持个体工商户的系列政策。
 - [安徽省进一步促进个体工商户发展若干措施解读 — 安徽省人民政府](https://www.ah.gov.cn/content/article/564252431) — 安徽省（含合肥）促进个体工商户发展的政策措施及解读。
+- [郑州市人工智能 OPC 创业社区推广方案](https://public.zhengzhou.gov.cn/D0104X/10135111.jhtml) — 2026 年 7 月，郑州市人民政府办公室发布的 OPC 创业社区推广方案。
 
 ### United States
 
