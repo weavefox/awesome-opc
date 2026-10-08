@@ -234,6 +234,7 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=16" width="16" height="16" /> [Notion AI](https://www.notion.so/product/ai) — All-in-one workspace with AI. Docs, databases, projects, meeting summaries, and knowledge base. The operating system for one-person companies.
 - <img src="https://www.google.com/s2/favicons?domain=reclaim.ai&sz=16" width="16" height="16" /> [Reclaim.ai](https://reclaim.ai/) — AI calendar that defends focus blocks, schedules habits, and finds optimal meeting slots based on your energy patterns.
 - <img src="https://www.google.com/s2/favicons?domain=super.so&sz=16" width="16" height="16" /> [Super](https://super.so/) — Turn Notion into a website. $12/month for a beautiful, fast site with your Notion content as the CMS.
+- <img src="https://www.google.com/s2/favicons?domain=tale.dev&sz=16" width="16" height="16" /> [Tale](https://tale.dev) — Open-source workspace where a solo operator can coordinate projects, tasks, files and instructions with configured AI agents through authenticated REST and deployment-scoped knowledge/automation MCP tools.
 - <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=16" width="16" height="16" /> [Zapier](https://zapier.com/) — Connect 7,000+ apps with AI decision steps. The easiest automation for non-technical founders.
 
 ### AI-Powered
