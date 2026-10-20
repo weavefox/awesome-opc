@@ -215,6 +215,7 @@ To keep this list useful and trustworthy:
 
 ### Finance & Accounting
 
+- <img src="https://www.google.com/s2/favicons?domain=agentaos.ai&sz=16" width="16" height="16" /> [AgentaOS](https://agentaos.ai/) — Merchant of record that lets a solo founder sell SaaS, digital products or services worldwide with no company abroad, handling VAT and sales tax and paying out in 85+ countries (4.5% + €0.50 per sale, 2026).
 - <img src="https://www.google.com/s2/favicons?domain=aipay.alipay.com&sz=16" width="16" height="16" /> [Alipay AI Pay](https://aipay.alipay.com/) — AI-native payment solution by Alipay that enables AI agents to handle transactions seamlessly. 100M+ users, ideal for agentic commerce.
 - <img src="https://www.google.com/s2/favicons?domain=b.alipay.com&sz=16" width="16" height="16" /> [支付宝](https://b.alipay.com/) — Alibaba's payment platform. 0.6% fee, required for serving Chinese customers.
 - <img src="https://www.google.com/s2/favicons?domain=fondo.com&sz=16" width="16" height="16" /> [Fondo](https://www.fondo.com/) — AI-powered bookkeeping for startups. Automated categorization, monthly closes, tax preparation, and R&D tax credits.
