@@ -210,6 +210,7 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=kamplyapp.com&sz=16" width="16" height="16" /> [Kamply](https://kamplyapp.com/) — Paid Mac app whose marketing crew makes a solo founder's social posts, carousels, video reels, ads and decks in the company's own branding, on the founder's Claude Code or Codex plan.
 - <img src="https://www.google.com/s2/favicons?domain=plausible.io&sz=16" width="16" height="16" /> [Plausible](https://plausible.io/) — Privacy-friendly, lightweight web analytics. No cookie banners needed.
 - <img src="https://www.google.com/s2/favicons?domain=posthog.com&sz=16" width="16" height="16" /> [PostHog](https://posthog.com/) — Full-featured product analytics. Session recording, feature flags, A/B testing, and self-hosted option. Free tier up to 1M events/month.
+- <img src="https://www.google.com/s2/favicons?domain=soloadlab.com&sz=16" width="16" height="16" /> [Solo Ad Lab](https://soloadlab.com/) — Step-by-step playbooks for making AI ads, UGC, and launch videos, each based on a workflow a creator shared in public.
 - <img src="https://www.google.com/s2/favicons?domain=umami.is&sz=16" width="16" height="16" /> [Umami](https://umami.is/) — Open-source web analytics. Simple, privacy-focused, and self-hostable for free.
 - <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
 
