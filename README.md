@@ -290,6 +290,7 @@ To keep this list useful and trustworthy:
 
 - <img src="https://www.google.com/s2/favicons?domain=clay.com&sz=16" width="16" height="16" /> [Clay](https://www.clay.com/) — AI lead research and enrichment from 75+ data sources. Builds detailed prospect profiles automatically. The outbound engine for solo SaaS.
 - <img src="https://www.google.com/s2/favicons?domain=instantly.ai&sz=16" width="16" height="16" /> [Instantly](https://instantly.ai/) — AI cold email at scale. Unlimited accounts, built-in warm-up, AI-written personalized sequences. The solo founder's outbound sales machine.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=16" width="16" height="16" /> [looot local leads](https://github.com/loootai/looot-local-leads) — Open-source (MIT) prospecting app for solo web and SEO freelancers: finds local businesses on Google Maps, flags website gaps and finds a verified email, paid per call through the looot data API (about $0.06 for 20 businesses in a 2026-10-14 run).
 
 ---
 
