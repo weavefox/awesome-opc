@@ -1,1 +1,5 @@
 *.astro linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+*.mjs linguist-detectable=false
+*.ts linguist-detectable=false
