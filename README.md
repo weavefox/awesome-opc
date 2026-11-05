@@ -213,6 +213,7 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=soloadlab.com&sz=16" width="16" height="16" /> [Solo Ad Lab](https://soloadlab.com/) — Step-by-step playbooks for making AI ads, UGC, and launch videos, each based on a workflow a creator shared in public.
 - <img src="https://www.google.com/s2/favicons?domain=umami.is&sz=16" width="16" height="16" /> [Umami](https://umami.is/) — Open-source web analytics. Simple, privacy-focused, and self-hostable for free.
 - <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
+- <img src="https://www.google.com/s2/favicons?domain=asolocalization.com&sz=16" width="16" height="16" /> [App Store Localizer](https://asolocalization.com/) — Localize an iOS app's store screenshots and metadata (title, subtitle, keywords, description) into 20+ languages from its App Store URL. One-time price from $19.99, no subscription.
 
 ### Finance & Accounting
 
