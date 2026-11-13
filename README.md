@@ -212,6 +212,7 @@ To keep this list useful and trustworthy:
 - <img src="https://www.google.com/s2/favicons?domain=sitepatent.com&sz=16" width="16" height="16" /> [SitePatent](https://sitepatent.com/) — Launch directory where a solo founder can list a new product for free, get a reviewed listing page with a link back, and let AI assistants search it through a no-key MCP server.
 - <img src="https://www.google.com/s2/favicons?domain=soloadlab.com&sz=16" width="16" height="16" /> [Solo Ad Lab](https://soloadlab.com/) — Step-by-step playbooks for making AI ads, UGC, and launch videos, each based on a workflow a creator shared in public.
 - <img src="https://www.google.com/s2/favicons?domain=umami.is&sz=16" width="16" height="16" /> [Umami](https://umami.is/) — Open-source web analytics. Simple, privacy-focused, and self-hostable for free.
+- <img src="https://www.google.com/s2/favicons?domain=wavegrain.com&sz=16" width="16" height="16" /> [Wavegrain](https://wavegrain.com/) - Makes curated TikTok slideshows and Instagram carousels for a brand, then schedules and posts them, so one person can keep TikTok and Instagram posting going.
 - <img src="https://www.google.com/s2/favicons?domain=x.com&sz=16" width="16" height="16" /> [X](https://x.com/) — The go-to platform for building in public and growing an audience as a solo founder.
 
 ### Finance & Accounting
